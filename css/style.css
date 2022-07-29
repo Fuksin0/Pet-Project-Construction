@@ -1,0 +1,74 @@
+*,
+*::after,
+*::before{
+    box-sizing: border-box;
+}
+
+body{
+    font-family: inherit;
+}
+
+.container{
+    max-width: 1170px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+.header{
+    background-image:url(../img/header.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+.header__top{
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #333;
+    height: 60px;;
+}
+
+
+.header__ul{
+    display:flex;
+}
+
+.header__li,a{
+    font-family: 'Roboto', sans-serif;
+    list-style: none;
+    padding:0 14px;;
+    color:white;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.header__text{
+    font-family: 'Exo 2', sans-serif;
+    font-size: 66px;
+    text-align: center;
+    align-items: center;
+    color:#fff;
+    text-shadow: 1px 1px 1px rgb(0 0 0 / 15%);
+    font-weight: 800;
+    margin-top: 150px;
+}
+
+.header__description{
+    font-family: 'Roboto', sans-serif;
+    font-size: 24px;
+    color:#fff;
+    text-align: center;
+    text-shadow: 1px 1px 1px rgb(0 0 0 / 15%);
+    margin-top:30px;
+    margin-bottom: 24px;
+}
+
+
+/* Начало main контента */
+
+.services{
+    height: 759px;
+    background-color: #F9F9F9;
+    margin-top: 60px;
+    margin-bottom: 60px;
+}
