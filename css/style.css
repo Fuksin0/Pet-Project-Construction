@@ -72,7 +72,7 @@ body{
     margin-bottom: 60px;
 }
 
-.services__text{
+.services__title{
     font-size: 36px;
     font-family: 'Exo 2', sans-serif;
     color:#333;
@@ -89,4 +89,37 @@ body{
     object-fit: cover;
 }
 
+.services__cards{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-top: 50px;
+}
 
+.services__card--text{
+    margin-top: 250px;
+}
+
+.services__card--text,.services__card--desc,.services__card--price{
+    text-align: center;
+}
+
+.about__button{
+    /* transition: all 2.s ease-in-out; */
+    border-radius: 20px;
+    background-color: #8bc34a;
+    position: relative;
+    left: 20%;
+    height: 40px;
+    padding:0 22px;
+    margin:5px;
+    color:white;
+    line-height: 40px;
+    text-shadow: 1px 1px 1px rgb(0 0 0 / 20%);
+    border: none;
+    cursor: pointer;
+    font-weight: 500;
+    font-size: 18px;
+    letter-spacing: normal;
+    font-family: 'Roboto', sans-serif;
+}
