@@ -66,9 +66,27 @@ body{
 
 /* Начало main контента */
 
-.services{
+#services{
     height: 759px;
     background-color: #F9F9F9;
-    margin-top: 60px;
     margin-bottom: 60px;
 }
+
+.services__text{
+    font-size: 36px;
+    font-family: 'Exo 2', sans-serif;
+    color:#333;
+    text-align: center;
+    padding-top: 60px;
+    margin:0;
+}
+
+.services__card{
+    background-image: url(../img/capital.jpg);
+    width: 286px;
+    height: 250px;
+    background-position: center;
+    object-fit: cover;
+}
+
+
