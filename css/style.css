@@ -242,17 +242,47 @@ text-transform: none;
 
 /* Smartphones (вертикальная и горизонтальная ориентация) ----------- */
 @media only screen and (min-width : 320px) and (max-width : 480px) {
-    /* стили */
+    .header{
+        max-width: 100%;
     }
+    .services__cards{
+        flex-direction: column;
+    }
+
+    .header{
+        max-height: 100%;
+    }
+
+    .header__li,a{
+        font-family: sans-serif;
+        padding: 0;
+    }
+    .services__cards{
+        max-width: 50%;
+        max-height: 50%;
+        flex-direction: column;
+        max-width:fit-content;
+        max-height: fit-content;
+    }
+    .modal{
+        max-width: 50vw;
+        max-height: 100vh;
+    }
+
+    .modal__list{
+        max-width: 50%;
+        max-height: 100%;
+    }
+    .modal li{
+        font-size: 12px;
+    }
+}
+
+
     
     /* Smartphones (горизонтальная) ----------- */
     @media only screen and (min-width: 321px) {
-        .header{
-            max-width: 100%;
-        }
-        .services__cards{
-            flex-direction: column;
-        }
+
     }
     
     /* Smartphones (вертикальная) ----------- */
