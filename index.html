@@ -7,24 +7,44 @@
 <link href="https://fonts.googleapis.com/css2?family=Exo+2&family=Roboto&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="./css/normalize.css">
 	<link rel="stylesheet" href="./css/style.css">
+	<link rel="stylesheet" href="./css/modal.css"> <!-- Подключаем CSS модального окна -->
+	<script defer src="./js/modal.js"></script> <!-- Подключаем JS модального окна -->
+	<script defer src="./js/slider.js"></script> <!-- Подключаем JS слайдера -->
+	<script defer src="./js/calc.js"></script>
+
 </head>
 
 <!-- Окончание тега head -->
 
-<body>
+<div>
 	<header class="header">
 		<div class="header__top">
 			<nav id="menu">
 				<ul class="header__ul"> <!-- Шапка сайта -->
-					<li class="header__li" ><a href="#">Главная</a></li>
-					<li class="header__li" ><a href="#services">Калькулятор</a></li>
-					<li class="header__li" ><a href="#">Наши работы</a></li>
-					<li class="header__li" ><a href="#">Отзывы</a></li>
-					<li class="header__li" ><a href="#">Контакты</a></li>
+					<li class="header__li" ><a href="#main">Главная</a></li>
+					<li class="header__li" ><a href="#services">Наши услуги</a></li>
+					<li class="header__li" ><a href="#work-list">Перечень работ</a></li>
+					<li class="header__li" ><a href="#calculator">Калькулятор</a></li>
+					<li class="header__li" ><a href="#contacts">Контакты</a></li>
 				</ul>
 			</nav>
 		</div>
-		<div class="container"> <!-- Контейнер для фиксации контента -->	
+		<div class="slider">
+			<!-- Первый слайд -->
+			<div class="item">
+				<img src="./img/cap_header.jpg">
+			  </div>
+			  <div class="item">
+				<img src="./img/cosmetic_header.jpeg">
+			  </div>
+			  <div class="item">
+				<img src="./img/roma-b01-b.jpg">
+			  </div>
+			  <!-- Кнопки-стрелочки -->
+	  <a class="previous" onclick="previousSlide()">&#10094;</a>
+	  <a class="next" onclick="nextSlide()">&#10095;</a>
+		<div class="container"> <!-- Контейнер для фиксации контента -->
+			<div class="header-main__text">
 				<h2 class="header__text">
 					Наши работы или акции/скидки
 				</h2>
@@ -32,22 +52,29 @@
 					Только в этом месяце скидка 10%
 					на все виды работ!
 				</p>
+				</div>
 	</div>
+</div>
 </header>
 
-<main> <!-- Начало главного контента сайта -->
+<!-- Начало главного контента сайта -->
+
+<main> 
 	<section id="services">
 		<div class="container">
 		<h2 class="services__title">Ремонт любой сложности</h2>
 		<div class="services__cards">
 
+			<!-- Блок из трех карточек -->
 		<div class="services__card--left">
 			<img class="services__card--img" src="./img/cosmetic.jpg" alt="">
 			<div class="card__box">
 			<h2 class="services__card--text">Косметический ремонт</h2>
 			<p class="services__card--desc">Обновление внешнего вида <br>помещения</p>
 			<p class="services__card--price">От 5000 руб./м2</p>
-			<a class="services__card--about_button" href="#"><button class="about__button">Подробнее</button></a>
+			<a href="#" class="js-open-modal services__card--about_button" data-modal="1">
+				<button class="about__button">Подробнее</button>
+			</a>
 		</div>
 			</div>
 
@@ -57,7 +84,9 @@
 				<h2 class="services__card--text">Капитальный ремонт</h2>
 				<p class="services__card--desc">Значительные изменения, <br>перепланировка</p>
 				<p class="services__card--price">От 10 000 руб./м2</p>
-				<a class="services__card--about_button" href="#"><button class="about__button">Подробнее</button></a>
+				<a href="#" class="js-open-modal services__card--about_button" data-modal="2">
+					<button class="about__button">Подробнее</button>
+				</a>
 				</div>	
 				</div>
 
@@ -67,12 +96,76 @@
 					<h2 class="services__card--text">Эксклюзивный ремонт</h2>
 					<p class="services__card--desc">Дизайнерские решения, <br>индивидуальный подход</p>
 					<p class="services__card--price">От 50 000 руб./м2</p>
-					<a class="services__card--about_button" href="#"><button class="about__button">Подробнее</button></a>
+					<a href="#" class="js-open-modal services__card--about_button" data-modal="3">
+						<button class="about__button">Подробнее</button>
+					</a>
 					</div>
 					</div>
 
-		</div>
+					<!-- Блок из трех карточек -->
+
+
+					<!-- Блок модальных окон,которые появляются при нажатии кнопок сверху -->
+					<div class="modal" data-modal="1">
+						<!--   Svg иконка для закрытия окна  -->
+						<svg class="modal__cross js-modal-close" xmlns="http://www.w3.org/2000/svg"               viewBox="0 0 24 24"><path d="M23.954 21.03l-9.184-9.095 9.092-9.174-2.832-2.807-9.09 9.179-9.176-9.088-2.81 2.81 9.186 9.105-9.095 9.184 2.81 2.81 9.112-9.192 9.18 9.1z"/></svg>
+						<h2>Что входит в косметический ремонт</h2>
+						<p class="modal__title">Косметический ремонт может заключаться в следующих работах:</p>
+						<ul>
+							<li>черновые работы. Удаляется устаревшая отделка – краска, облицовка, прочее. При обнаружении значимых недостатков на стены наносится стартовая штукатурка, на пол – бетонная стяжка;</li>
+						<li>отделка потолка и стен. Важно соблюдать технологию применения выбранных строительных материалов – это необходимо для соблюдения установленных стандартов и выполнения ремонта;</li>
+						<li>настил напольного покрытия. На выбор – ламинат, линолеум, паркет, прочее. Выбор зависит от типа помещения и пожеланий заказчика. При необходимости основание дополнительно выравнивается путем заливки стяжки;</li>
+					<li>монтаж фурнитуры. Устанавливаются двери, плинтуса, розетки, аксессуары, прочие функциональные элементы.</li>
+					</ul>
+					 </div>
+
+					 <div class="modal" data-modal="2">
+						<!--   Svg иконка для закрытия окна  -->
+						<svg class="modal__cross js-modal-close" xmlns="http://www.w3.org/2000/svg"               viewBox="0 0 24 24"><path d="M23.954 21.03l-9.184-9.095 9.092-9.174-2.832-2.807-9.09 9.179-9.176-9.088-2.81 2.81 9.186 9.105-9.095 9.184 2.81 2.81 9.112-9.192 9.18 9.1z"/></svg>
+						<h2>Что входит в Капитальный ремонт</h2>
+						<p class="modal__title">Капитальный ремонт может заключаться в следующих работах:</p>
+						<ul>
+							<li>ремонт внутридомовых инженерных систем электро-, тепло-, газо-, водоснабжения, водоотведения</li>
+						<li>ремонт или замена лифтового оборудования, признанного непригодным для эксплуатации, при необходимости – ремонт лифтовых шахт</li>
+						<li>ремонт крыш и ремонт фасада</li>
+					<li>ремонт подвальных помещений, относящихся к общему имуществу в многоквартирных домах</li>
+					<li>установка коллективных (общедомовых) приборов учёта потребления ресурсов и узлов управления (тепловой энергии, горячей и холодной воды, электрической энергии, газа);
+						ремонт фундамента МКД.</li>
+				</ul>
+					 </div>
+
+					 <div class="modal" data-modal="3">
+						<!--   Svg иконка для закрытия окна  -->
+						<svg class="modal__cross js-modal-close" xmlns="http://www.w3.org/2000/svg"               viewBox="0 0 24 24"><path d="M23.954 21.03l-9.184-9.095 9.092-9.174-2.832-2.807-9.09 9.179-9.176-9.088-2.81 2.81 9.186 9.105-9.095 9.184 2.81 2.81 9.112-9.192 9.18 9.1z"/></svg>
+						<h2>Что входит в Эксклюзивный ремонт</h2>
+						<p class="modal__title">Эксклюзивный ремонт может заключаться в следующих работах:</p>
+						<ul>
+							<li>Проведение всего спектра подготовительных работ. Если это старая квартира, то мы поможем вывезти из неё мебель, демонтируем старые декоративные покрытия, снимем сантехнику и осветительные приборы и т.д. Если квартира новая, тогда подготовительные работы могут и не потребоваться. При необходимости на подготовительном этапе может проводиться перепланировка, монтаж различных объёмных элементов из гипсокартона (стен, потолков, арок) и т.д</li>
+						<li>Монтаж черновых перекрытий и коммуникаций. Мы заливаем основу для пола - стяжку, прокладываем электрическую проводку, трубы, кабели. Всё это будет смонтировано скрыто, в соответствии с современными стандартами дизайна.</li>
+						<li>Чистовая отделка лучшими материалами класса «делюкс», установка розеток и осветительных приборов.</li>
+					<li>Установка сантехники, подключение бытовых приборов, таких как электрическая или газовая плита, душевая кабина и т.д.</li>
+					<li>Уборка в помещении и расстановка мебели.</li>
+				</ul>
+					 </div>
+
+					 <!-- Блок модальных окон,которые появляются при нажатии кнопок сверху -->
+
+					 <div class="overlay js-overlay-modal"></div> <!-- Подложка под модальным окном -->
+
+
 	</div>
+</section>
+
+<section class="#calculator">
+	<table class="tftable">
+        <tr><td>1</td><td>Укладка плитки</td><td><input type="text" value="0"></td><td>1000</td><td><input type="checkbox" id="cb"></td></tr>
+        <tr><td>2</td><td>Ламинат</td><td><input type="text" value="0"></td><td>250</td><td><input type="checkbox" id="cb"></td></tr>
+        <tr><td>3</td><td>штукатурка</td><td><input type="text" value="0"></td><td>150</td><td><input type="checkbox" id="cb"></td></tr>
+        <tr><td>4</td><td>Стяжка</td><td><input type="text" value="0"></td><td>250</td><td><input type="checkbox" id="cb"></td></tr>
+</table>
+<input class="button-calc" type="submit" value="Calc">
+<div><p></p></div>
+
 </section>
 
 </main>
