@@ -466,6 +466,28 @@ text-transform: none;
     display:flex;
 }
 
+.nav-title{
+text-align: center;
+}
+.price-nav > a {
+    display: inline-block;
+    margin: 20px 10px;
+}
+.price-nav_margin{
+    display:inline-block;
+    margin:35px 10px;
+}
+.price-nav_sticky{
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+}
+.nav-link{
+    color: #2578a2;
+    outline: none;
+    text-decoration: underline;
+}
+
 .prices-table td{
     padding: 3px 15px;
     border: 1px solid #579aad;

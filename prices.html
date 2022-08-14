@@ -3,14 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta id="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Exo+2&family=Roboto&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="./css/normalize.css">
 	<link rel="stylesheet" href="./css/style.css">
     <script defer src="./js/slider.js"></script> <!-- Подключаем JS слайдера -->
-    <title>Прайс на работы</title>
+    <title>Смета на работы</title>
 </head>
 
 <body>
@@ -59,10 +59,21 @@
 <main>
     <section id="price">
 		<div class="container">
+			<h2 class="nav-title">Навигация по смете</h2>
+			<nav class="price-nav price-nav_sticky">
+			<a href="#ceiling" class="nav-link">Полоток</a>
+			<a href="#walls" class="nav-link">Стены</a>
+			<a href="#floor" class="nav-link">Пол</a>
+			<a href="#plumbing" class="nav-link">Сантехника</a>
+			<a href="#electrics" class="nav-link">Электрика</a>
+			<a href="#more" class="nav-link">Разное</a>
+			<a href="#pvh" class="nav-link">ПВХ</a>
+			<a href="#doors" class="nav-link">Двери</a>
+		</nav>
 	<table class="prices-table">
 		<tbody>
 			<tr class="sub-tbody">
-				<td><a name="potolok"></a>Потолок: Демонтажные работы</td>
+				<td><a id="ceiling"></a>Потолок: Демонтажные работы</td>
 				<td>Ед. изм.</td>
 				<td>Стоим. руб.</td>
 			</tr>
@@ -419,12 +430,12 @@
 		</tbody>
 	</table>
 	
-	<p class="price_link"><a href="prajs-list#potolok" title="Потолки">Потолки</a> <a href="prajs-list#stena" title="Стены">Стены</a> <a href="prajs-list#pol" title="Пол">Пол</a> <a href="prajs-list#santeh" title="Сантехника">Сантехника</a> <a href="prajs-list#elektrika" title="Электрика">Электрика</a> <a href="prajs-list#more" title="Разное">Разное</a> <a href="prajs-list#pvh" title="ПВХ">ПВХ</a> <a href="prajs-list#door" title="Двери">Двери</a> <a href="prajs-list#potolok" title="В конец">В начало</a></p>
+	<nav class="price-nav price-nav_margin"><a href="#ceiling" class="nav-link">Полоток</a> <a href="#walls" class="nav-link">Стены</a> <a href="#floor" class="nav-link">Пол</a> <a href="#plumbing" class="nav-link">Сантехника</a> <a href="#electrics" class="nav-link">Электрика</a> <a href="#more" class="nav-link">Разное</a> <a href="#pvh" class="nav-link">ПВХ</a> <a href="#doors" class="nav-link">Двери</a> </nav>
 	
 	<table class="prices-table">
 		<tbody>
 			<tr class="sub-tbody">
-				<td><a name="stena"></a>Стены: Демонтажные работы</td>
+				<td><a id="walls"></a>Стены: Демонтажные работы</td>
 				<td>Ед. изм.</td>
 				<td>Стоим. руб.</td>
 			</tr>
@@ -1086,12 +1097,12 @@
 		</tbody>
 	</table>
 	
-	<p class="price_link"><a href="prajs-list#potolok" title="Потолки">Потолки</a> <a href="prajs-list#stena" title="Стены">Стены</a> <a href="prajs-list#pol" title="Пол">Пол</a> <a href="prajs-list#santeh" title="Сантехника">Сантехника</a> <a href="prajs-list#elektrika" title="Электрика">Электрика</a> <a href="prajs-list#more" title="Разное">Разное</a> <a href="prajs-list#pvh" title="ПВХ">ПВХ</a> <a href="prajs-list#door" title="Двери">Двери</a> <a href="prajs-list#potolok" title="В конец">В начало</a></p>
+	<nav class="price-nav price-nav_margin"><a href="#ceiling" class="nav-link">Полоток</a> <a href="#walls" class="nav-link">Стены</a> <a href="#floor" class="nav-link">Пол</a> <a href="#plumbing" class="nav-link">Сантехника</a> <a href="#electrics" class="nav-link">Электрика</a> <a href="#more" class="nav-link">Разное</a> <a href="#pvh" class="nav-link">ПВХ</a> <a href="#doors" class="nav-link">Двери</a> </nav>
 	
 	<table class="prices-table">
 		<tbody>
 			<tr class="sub-tbody">
-				<td><a name="pol"></a>Пол: Демонтажные работы</td>
+				<td><a id="floor"></a>Пол: Демонтажные работы</td>
 				<td>Ед. изм.</td>
 				<td>Стоим. руб.</td>
 			</tr>
@@ -1528,12 +1539,12 @@
 		</tbody>
 	</table>
 	
-	<p class="price_link"><a href="prajs-list#potolok" title="Потолки">Потолки</a> <a href="prajs-list#stena" title="Стены">Стены</a> <a href="prajs-list#pol" title="Пол">Пол</a> <a href="prajs-list#santeh" title="Сантехника">Сантехника</a> <a href="prajs-list#elektrika" title="Электрика">Электрика</a> <a href="prajs-list#more" title="Разное">Разное</a> <a href="prajs-list#pvh" title="ПВХ">ПВХ</a> <a href="prajs-list#door" title="Двери">Двери</a> <a href="prajs-list#potolok" title="В конец">В начало</a></p>
+	<nav class="price-nav price-nav_margin"> <a href="#ceiling" class="nav-link">Полоток</a> <a href="#walls" class="nav-link">Стены</a> <a href="#floor" class="nav-link">Пол</a> <a href="#plumbing" class="nav-link">Сантехника</a> <a href="#electrics" class="nav-link">Электрика</a> <a href="#more" class="nav-link">Разное</a> <a href="#pvh" class="nav-link">ПВХ</a> <a href="#doors" class="nav-link">Двери</a> </nav>
 	
 	<table class="prices-table">
 		<tbody>
 			<tr class="sub-tbody">
-				<td><a name="santeh"></a>Сантехника: Демонтажные работы</td>
+				<td><a id="plumbing"></a>Сантехника: Демонтажные работы</td>
 				<td>Ед. изм.</td>
 				<td>Стоим. руб.</td>
 			</tr>
@@ -1660,7 +1671,7 @@
 		</tbody>
 	</table>
 	
-	<p class="price_link"><a href="prajs-list#potolok" title="Потолки">Потолки</a> <a href="prajs-list#stena" title="Стены">Стены</a> <a href="prajs-list#pol" title="Пол">Пол</a> <a href="prajs-list#santeh" title="Сантехника">Сантехника</a> <a href="prajs-list#elektrika" title="Электрика">Электрика</a> <a href="prajs-list#more" title="Разное">Разное</a> <a href="prajs-list#pvh" title="ПВХ">ПВХ</a> <a href="prajs-list#door" title="Двери">Двери</a> <a href="prajs-list#potolok" title="В конец">В начало</a></p>
+	<nav class="price-nav price-nav_margin"> <a href="#ceiling" class="nav-link">Полоток</a> <a href="#walls" class="nav-link">Стены</a> <a href="#floor" class="nav-link">Пол</a> <a href="#plumbing" class="nav-link">Сантехника</a> <a href="#electrics" class="nav-link">Электрика</a> <a href="#more" class="nav-link">Разное</a> <a href="#pvh" class="nav-link">ПВХ</a> <a href="#doors" class="nav-link">Двери</a> </nav>
 	
 	<table class="prices-table">
 		<tbody>
@@ -2007,12 +2018,12 @@
 		</tbody>
 	</table>
 	
-	<p class="price_link"><a href="prajs-list#potolok" title="Потолки">Потолки</a> <a href="prajs-list#stena" title="Стены">Стены</a> <a href="prajs-list#pol" title="Пол">Пол</a> <a href="prajs-list#santeh" title="Сантехника">Сантехника</a> <a href="prajs-list#elektrika" title="Электрика">Электрика</a> <a href="prajs-list#more" title="Разное">Разное</a> <a href="prajs-list#pvh" title="ПВХ">ПВХ</a> <a href="prajs-list#door" title="Двери">Двери</a> <a href="prajs-list#potolok" title="В конец">В начало</a></p>
+	<nav class="price-nav price-nav_margin"> <a href="#ceiling" class="nav-link">Полоток</a> <a href="#walls" class="nav-link">Стены</a> <a href="#floor" class="nav-link">Пол</a> <a href="#plumbing" class="nav-link">Сантехника</a> <a href="#electrics" class="nav-link">Электрика</a> <a href="#more" class="nav-link">Разное</a> <a href="#pvh" class="nav-link">ПВХ</a> <a href="#doors" class="nav-link">Двери</a> </nav>
 	
 	<table class="prices-table">
 		<tbody>
 			<tr class="sub-tbody">
-				<td><a name="elektrika"></a>Электрика: Демонтажные работы</td>
+				<td><a id="electrics"></a>Электрика: Демонтажные работы</td>
 				<td>Ед. изм.</td>
 				<td>Стоим. руб.</td>
 			</tr>
@@ -2319,12 +2330,12 @@
 		</tbody>
 	</table>
 	
-	<p class="price_link"><a href="prajs-list#potolok" title="Потолки">Потолки</a> <a href="prajs-list#stena" title="Стены">Стены</a> <a href="prajs-list#pol" title="Пол">Пол</a> <a href="prajs-list#santeh" title="Сантехника">Сантехника</a> <a href="prajs-list#elektrika" title="Электрика">Электрика</a> <a href="prajs-list#more" title="Разное">Разное</a> <a href="prajs-list#pvh" title="ПВХ">ПВХ</a> <a href="prajs-list#door" title="Двери">Двери</a> <a href="prajs-list#potolok" title="В конец">В начало</a></p>
+	<nav class="price-nav price-nav_margin"><a href="#ceiling" class="nav-link">Полоток</a> <a href="#walls" class="nav-link">Стены</a> <a href="#floor" class="nav-link">Пол</a> <a href="#plumbing" class="nav-link">Сантехника</a> <a href="#electrics" class="nav-link">Электрика</a> <a href="#more" class="nav-link">Разное</a> <a href="#pvh" class="nav-link">ПВХ</a> <a href="#doors" class="nav-link">Двери</a> </nav>
 	
 	<table class="prices-table">
 		<tbody>
 			<tr class="sub-tbody">
-				<td><a name="more"></a>Разное: Демонтажные работы</td>
+				<td><a id="more"></a>Разное: Демонтажные работы</td>
 				<td>Ед. изм.</td>
 				<td>Стоим. руб.</td>
 			</tr>
@@ -2556,12 +2567,12 @@
 		</tbody>
 	</table>
 	
-	<p class="price_link"><a href="prajs-list#potolok" title="Потолки">Потолки</a> <a href="prajs-list#stena" title="Стены">Стены</a> <a href="prajs-list#pol" title="Пол">Пол</a> <a href="prajs-list#santeh" title="Сантехника">Сантехника</a> <a href="prajs-list#elektrika" title="Электрика">Электрика</a> <a href="prajs-list#more" title="Разное">Разное</a> <a href="prajs-list#pvh" title="ПВХ">ПВХ</a> <a href="prajs-list#door" title="Двери">Двери</a> <a href="prajs-list#potolok" title="В конец">В начало</a></p>
+	<nav class="price-nav price-nav_margin"><a href="#ceiling" class="nav-link">Полоток</a> <a href="#walls" class="nav-link">Стены</a> <a href="#floor" class="nav-link">Пол</a> <a href="#plumbing" class="nav-link">Сантехника</a> <a href="#electrics" class="nav-link">Электрика</a> <a href="#more" class="nav-link">Разное</a> <a href="#pvh" class="nav-link">ПВХ</a> <a href="#doors" class="nav-link">Двери</a> </nav>
 	
 	<table class="prices-table">
 		<tbody>
 			<tr class="sub-tbody">
-				<td><a name="pvh"></a>Установка пластиковых конструкций (окна, лоджии)</td>
+				<td><a id="pvh"></a>Установка пластиковых конструкций (окна, лоджии)</td>
 				<td>Панельный дом, руб</td>
 				<td>Кирпичный дом, руб</td>
 			</tr>
@@ -2638,12 +2649,12 @@
 		</tbody>
 	</table>
 	
-	<p class="price_link"><a href="prajs-list#potolok" title="Потолки">Потолки</a> <a href="prajs-list#stena" title="Стены">Стены</a> <a href="prajs-list#pol" title="Пол">Пол</a> <a href="prajs-list#santeh" title="Сантехника">Сантехника</a> <a href="prajs-list#elektrika" title="Электрика">Электрика</a> <a href="prajs-list#more" title="Разное">Разное</a> <a href="prajs-list#pvh" title="ПВХ">ПВХ</a> <a href="prajs-list#door" title="Двери">Двери</a> <a href="prajs-list#potolok" title="В конец">В начало</a></p>
+	<nav class="price-nav price-nav_margin"><a href="#ceiling" class="nav-link">Полоток</a> <a href="#walls" class="nav-link">Стены</a> <a href="#floor" class="nav-link">Пол</a> <a href="#plumbing" class="nav-link">Сантехника</a> <a href="#electrics" class="nav-link">Электрика</a> <a href="#more" class="nav-link">Разное</a> <a href="#pvh" class="nav-link">ПВХ</a> <a href="#doors" class="nav-link">Двери</a> </nav>
 	
 	<table class="prices-table">
 		<tbody>
 			<tr class="sub-tbody">
-				<td><a name="door"></a>Установка межкомнатных дверей</td>
+				<td><a id="doors"></a>Установка межкомнатных дверей</td>
 				<td>Ед. изм.</td>
 				<td>Стоим. руб.</td>
 			</tr>
@@ -2903,7 +2914,7 @@
 				<td>100</td>
 			</tr>
 			<tr class="sub-tbody">
-				<td><a name="end"></a>Утепление и звукоизоляция</td>
+				<td><a id="end"></a>Утепление и звукоизоляция</td>
 				<td>Ед. изм.</td>
 				<td>Стоим. руб.</td>
 			</tr>
