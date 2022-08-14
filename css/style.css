@@ -231,7 +231,7 @@ text-transform: none;
 font-weight: 300;
 text-align: center;
 font-size: 18px;
-font-family: 'Roboto', sans-serif;
+font-family: "Roboto", sans-serif;
 color:#222;
 line-height: 1.5;
 letter-spacing: 0px;
@@ -458,3 +458,46 @@ text-transform: none;
     }
 
     /* Конец адаптива */
+
+    
+    /* Prices.html */
+#price{
+    margin-top: 150px;
+    display:flex;
+}
+
+.prices-table td{
+    padding: 3px 15px;
+    border: 1px solid #579aad;
+    font-size: 14px;
+    color:#000;
+    font: 14px/20px Arial, 'Myriad Pro', sans-serif;
+}
+
+.sub-tbody{
+background: #ededed;
+color:#fff;
+}
+.sub-tbody > td {
+    color:#007bae;
+    font:14px/18px "Roboto", sans-serif;
+    font-weight: bold;
+}
+
+table,td{
+    border-collapse: collapse;
+    border-spacing: 0;
+    width:100%;
+}
+
+td{
+    color:#000;
+}
+
+thead,
+tfoot {
+    background-color: #333;
+    color: #fff;
+}
+
+    /* Конец prices.html */
