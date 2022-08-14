@@ -20,9 +20,9 @@ body{
     background-repeat: no-repeat;
     height: 100vh;
 }
-.header__top{
-    display:flex;
-    justify-content: space-around;
+.header-top{
+    display: flex;
+    justify-content: space-evenly;
     align-items: center;
     background-color: #333;
     height: 60px;
@@ -36,38 +36,37 @@ body{
 
 }
 
-.scroll-down .header__top{
+.scroll-down .header-top{
 	transform: translate3d(0, -100%, 0);
 	}
 
 
-.scroll-up .header__top {
+.scroll-up .header-top {
 		filter: drop-shadow(0 -10px 20px rgb(170, 170, 170));
 	}
 
 
-    .menu-is-open .header__top {
+    .menu-is-open .header-top {
         overflow: hidden;
             filter: none;
         }
 
-.header__ul{
+.header-ul{
     display:flex;
     position:relative;
-    justify-content: center;
     align-items: center;
 }
 
-.header__ul li{
+.header-ul li{
 position: relative;
 }
 
-.header__ul li a{
+.header-ul li a{
     position: relative;
 }
 
 
-.header__li,a{
+.header-li,a{
     font-family: 'Roboto', sans-serif;
     list-style: none;
     padding:0 14px;;
@@ -79,7 +78,7 @@ position: relative;
 .header-main__text{
     margin-top: -635px;
 }
-.header__text{
+.header-text{
     font-family: 'Exo 2', sans-serif;
     font-size: 66px;
     text-align: center;
@@ -89,7 +88,7 @@ position: relative;
     font-weight: 800;
 }
 
-.header__description{
+.header-description{
     font-family: 'Roboto', sans-serif;
     font-size: 24px;
     color:#fff;
@@ -359,7 +358,7 @@ text-transform: none;
         max-height: 100%;
     }
 
-    .header__li,a{
+    .header-li,a{
         font-family: sans-serif;
         padding: 0;
     }
@@ -404,6 +403,12 @@ text-transform: none;
     
     /* iPads (вертикальная и горизонтальная) ----------- */
     @media only screen and (min-width: 768px) and (max-width: 1024px) {
+        .header-top{
+            display:inline-block;
+        }
+        .header-ul{
+            padding-left:15px;
+        }
     /* стили */
     }
     
@@ -518,10 +523,13 @@ text-align: center;
     text-decoration: underline;
 }
 
+.prices-table{
+    margin-bottom:20px;
+}
+
 .prices-table td{
-    padding: 3px 15px;
+    padding: 5px 10px;
     border: 1px solid #579aad;
-    font-size: 14px;
     color:#000;
     font: 14px/20px Arial, 'Myriad Pro', sans-serif;
 }
