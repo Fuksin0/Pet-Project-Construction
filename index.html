@@ -11,7 +11,7 @@
 	<link rel="stylesheet" href="./css/modal.css"> <!-- Подключаем CSS модального окна -->
 	<script defer src="./js/modal.js"></script> <!-- Подключаем JS модального окна -->
 	<script defer src="./js/slider.js"></script> <!-- Подключаем JS слайдера -->
-	<script defer src="./js/calc.js"></script>
+	<!-- <script defer src="./js/calc.js"></script> -->
 
 </head>
 
@@ -19,7 +19,7 @@
 <body>
 <div>
 	<header id="main" class="header" media="screen">
-		<div class="header-top">
+		<div class="header-top_main">
 			<nav id="menu">
 				<ul class="header-ul"> <!-- Шапка сайта -->
 					<li class="header-li" ><a href="#main">Главная</a></li>
@@ -39,7 +39,7 @@
 				<img src="./img/cosmetic_header.jpeg">
 			  </div>
 			  <div class="item">
-				<img src="./img/roma-b01-b.jpg">
+				<img src="./img/slider-pic1.jpg">
 			  </div>
 			  <!-- Кнопки-стрелочки -->
 	  <a class="previous" onclick="previousSlide()">&#10094;</a>
@@ -161,38 +161,76 @@
 	<div class="container">
 <h2 class="work-title">Ремонтные работы</h2>
 <div class="work-cards">
-	<div class="col-left">
-		<img class="col-left__img" src="./img/img-temp.jpg" alt="Temporary image">
-		<div class="card-box__col1">
-		<h3 class="col-left col-left_h3_title">Ремонт стен</h3>
-		<p class="col-left col-left_p">Ремонт стен подробнее</p>
-		<a href="prices.html#prices" target="_blank" class="services__card--about_button" >
-			<button class="about__button">Подробнее</button>
+	<div class="col-left m30">
+		<img class="col-left__img" src="./img/potolok.jpg" alt="Картинка потолка">
+		<div class="card-box__col1 m30">
+		<h3 class="col-left col-left_h3_title">Потолок</h3>
+		<p class="col-left col-left_p">Подробнее о потолке</p>
+		<a href="prices.html#ceiling" target="_blank" class="services__card--about_button" >
+			<button class="about__button">Посмотреть смету</button>
 		</a>
 	</div>
 	</div>
-		<div class="card__box__col2">
-			<img class="col-left__img" src="./img/img-temp.jpg" alt="Temporary image">
-			<h3 class="col-left col-left_h3_title">Ремонт стен1</h3>
-			<p class="col-left col-left_p">Ремонт стен подробнее1</p>
-			<a href="prices.html#prices" target="_blank" class="services__card--about_button" >
-				<button class="about__button">Подробнее1</button>
+		<div class="card__box__col2 m30">
+			<img class="col-left__img" src="./img/walls.jpg" alt="Temporary image">
+			<h3 class="col-left col-left_h3_title">Стены</h3>
+			<p class="col-left col-left_p">Подробнее о стенах</p>
+			<a href="prices.html#walls" target="_blank" class="services__card--about_button" >
+				<button class="about__button">Посмотреть смету</button>
 			</a>
 		</div>
-			<div class="card__box__col3">
-				<img class="col-left__img" src="./img/img-temp.jpg" alt="Temporary image">
-				<h3 class="col-left col-left_h3_title">Ремонт стен1</h3>
-				<p class="col-left col-left_p">Ремонт стен подробнее1</p>
-				<a href="prices.html#prices" target="_blank" class="services__card--about_button" >
-					<button class="about__button">Подробнее1</button>
+			<div class="card__box__col3 m30">
+				<img class="col-left__img" src="./img/floor2.jpg" alt="Temporary image">
+				<h3 class="col-left col-left_h3_title">Пол</h3>
+				<p class="col-left col-left_p">Пол подробнее</p>
+				<a href="prices.html#floor" target="_blank" class="services__card--about_button" >
+					<button class="about__button">Посмотреть смету</button>
 				</a>
 	</div>
+	<div class="card__box__col4 m30">
+		<img class="col-left__img" src="./img/plumbing.jpg" alt="Temporary image">
+		<h3 class="col-left col-left_h3_title">Сантехника</h3>
+		<p class="col-left col-left_p">Подробнее о сантехнике</p>
+		<a href="prices.html#plumbing" target="_blank" class="services__card--about_button" >
+			<button class="about__button">Посмотреть смету</button>
+		</a>
+</div>
+<div class="card__box__col5 m30">
+	<img class="col-left__img" src="./img/electrics.jpg" alt="Temporary image">
+	<h3 class="col-left col-left_h3_title">Электрика</h3>
+	<p class="col-left col-left_p">Подробнее об Электрике</p>
+	<a href="prices.html#electrics" target="_blank" class="services__card--about_button" >
+		<button class="about__button">Посмотреть смету</button>
+	</a>
+</div>
+<div class="card__box__col6 m30">
+	<img class="col-left__img" src="./img/demontaj.jpg" alt="Temporary image">
+	<h3 class="col-left col-left_h3_title">Разное</h3>
+	<p class="col-left col-left_p">Подробнее о разном</p>
+	<a href="prices.html#more" target="_blank" class="services__card--about_button" >
+		<button class="about__button">Посмотреть смету</button>
+	</a>
+</div>	
+<div class="card__box__col7 m30 p15">
+	<img class="col-left__img" src="./img/pvh.jpg" alt="Temporary image">
+	<h3 class="col-left col-left_h3_title">ПВХ</h3>
+	<p class="col-left col-left_p">Подробнее о ПВХ</p>
+	<a href="prices.html#pvh" target="_blank" class="services__card--about_button" >
+		<button class="about__button">Посмотреть смету</button>
+	</a>
+</div>
+<div class="card__box__col8 m30 p15">
+	<img class="col-left__img" src="./img/doors.jpg" alt="Temporary image">
+	<h3 class="col-left col-left_h3_title">Двери</h3>
+	<p class="col-left col-left_p">Подробнее о дверях</p>
+	<a href="prices.html#doors" target="_blank" class="services__card--about_button" >
+		<button class="about__button">Посмотреть смету</button>
+	</a>
+</div>
 		</div>
 	</div>
 
-
-	
-
+<script defer src="./js/smooth.js"></script>
 	<!-- <div class="row-bottom">
 		<div class="card-box__col">
 			<img class="col-left__img" src="./img/img-temp.jpg" alt="Temporary image">
