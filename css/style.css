@@ -613,5 +613,8 @@ margin-bottom: 30px;
 line-height: 1.8;
 font-weight: 300;
 }
+.delete-after{
+   float:left;
+}
 
 /* Конец about-company*/
