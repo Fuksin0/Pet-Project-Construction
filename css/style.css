@@ -5,7 +5,9 @@
 }
 
 body{
-    font-family: inherit;
+    font-family: 'Roboto', sans-serif;
+    color:#222;
+    font-size: 18px;
 }
 
 .container{
@@ -232,18 +234,17 @@ text-transform: none;
 
 /* Work section */
 #work-list{
-    height: 100vh;
+    height: 100%;
     width: 100%;
 }
 
 .work-cards{ 
     display:flex;
     flex-wrap: wrap;
-    flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-evenly;
     padding-top:95px;
 }
-.m30{
+.p40{
     padding-bottom: 40px;
 }
 .last-card-boxes{
@@ -602,3 +603,15 @@ tfoot {
 
     /* Конец prices.html */
     
+/* Начало новой секции about-company */
+.about-company{
+    margin-bottom: 60px;
+    padding-bottom: 60px;
+}
+.about-desc{
+margin-bottom: 30px;
+line-height: 1.8;
+font-weight: 300;
+}
+
+/* Конец about-company*/
