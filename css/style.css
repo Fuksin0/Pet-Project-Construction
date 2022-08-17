@@ -614,7 +614,6 @@ line-height: 1.8;
 font-weight: 300;
 }
 .delete-after{
-   float:left;
-}
+   font-weight: bold !important;
 
 /* Конец about-company*/
