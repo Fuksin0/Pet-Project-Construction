@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="ru">
 <head>
 	<title>Ремонт квартир и Ванных комнат под ключ(СПБиЛО)</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,6 +8,9 @@
 <link href="https://fonts.googleapis.com/css2?family=Exo+2&family=Roboto&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="./css/normalize.css">
 	<link rel="stylesheet" href="./css/style.css">
+	<link rel="stylesheet" href="./css/2.css">
+	<link rel="stylesheet" href="./font-awesome-4.7.0/css/font-awesome.min.css">
+	<!-- <link rel="stylesheet" href="./css/main.css"> -->
 	<link rel="stylesheet" href="./css/modal.css"> <!-- Подключаем CSS модального окна -->
 	<script defer src="./js/modal.js"></script> <!-- Подключаем JS модального окна -->
 	<script defer src="./js/slider.js"></script> <!-- Подключаем JS слайдера -->
@@ -18,7 +21,7 @@
 <!-- Окончание тега head -->
 <body>
 <div>
-	<header id="main" class="header" media="screen">
+	<header id="main" class="header">
 		<div class="header-top_main">
 			<nav id="menu">
 				<ul class="header-ul"> <!-- Шапка сайта -->
@@ -26,21 +29,25 @@
 					<li class="header-li" ><a href="#services">Наши услуги</a></li>
 					<li class="header-li" ><a href="#work-list">Перечень работ</a></li>
 					<li class="header-li" ><a href="#calculator">Калькулятор</a></li>
-					<li class="header-li" ><a href="#contacts">Контакты</a></li>
+					<li class="header-li" ><a href="#about-company">Контакты</a></li>
 					<li class="header-li" ><a href="prices.html#header-top">Прайс лист</a></li>
 				</ul>
 			</nav>
+			<div class="contact-phone">
+				<img src="img/green_phone.png" alt="Позвоните нам">
+				<a class="phone-number" href="tel:+7(111)111-11-11">+7(111)111-11-11</a>
+			</div>
 		</div>
 		<div class="slider">
 			<!-- Первый слайд -->
 			<div class="item">
-				<img src="./img/cap_header.jpg">
+				<img src="./img/cap_header.jpg" alt="Картинка в слайдере">
 			  </div>
 			  <div class="item">
-				<img src="./img/cosmetic_header.jpeg">
+				<img src="./img/cosmetic_header.jpeg" alt="Картинка в слайдере">
 			  </div>
 			  <div class="item">
-				<img src="./img/slider-pic1.jpg">
+				<img src="./img/slider-pic1.jpg" alt="Картинка в слайдере">
 			  </div>
 			  <!-- Кнопки-стрелочки -->
 	  <a class="previous" onclick="previousSlide()">&#10094;</a>
@@ -58,6 +65,7 @@
 	</div>
 </div>
 </header>
+</div> <!-- Возможно удалить этот див -->
 
 <!-- Начало главного контента сайта -->
 
@@ -73,9 +81,9 @@
 			<div class="card__box">
 			<h2 class="services__card--text">Косметический ремонт</h2>
 			<p class="services__card--desc">Обновление внешнего вида <br>помещения</p>
-			<p class="services__card--price">От 5000 руб./м2</p>
-			<a href="#" class="js-open-modal services__card--about_button" data-modal="1">
-				<button class="about__button">Подробнее</button>
+			<p class="services__card--price">От 2500 руб./м2</p>
+			<a href="#" class="js-open-modal services__card--about_button about__button" data-modal="1">
+				Подробнее
 			</a>
 		</div>
 			</div>
@@ -85,9 +93,9 @@
 				<div class="card__box">
 				<h2 class="services__card--text">Капитальный ремонт</h2>
 				<p class="services__card--desc">Значительные изменения, <br>перепланировка</p>
-				<p class="services__card--price">От 10 000 руб./м2</p>
-				<a href="#" class="js-open-modal services__card--about_button" data-modal="2">
-					<button class="about__button">Подробнее</button>
+				<p class="services__card--price">От 4500 руб./м2</p>
+				<a href="#" class="js-open-modal services__card--about_button about__button" data-modal="2">
+					Подробнее
 				</a>
 				</div>	
 				</div>
@@ -95,11 +103,11 @@
 				<div class="services__card--right">
 					<img class="services__card--img" src="./img/exclusive.jpg" alt="">
 					<div class="card__box">
-					<h2 class="services__card--text">Эксклюзивный ремонт</h2>
+					<h2 class="services__card--text">Евро ремонт</h2>
 					<p class="services__card--desc">Дизайнерские решения, <br>индивидуальный подход</p>
-					<p class="services__card--price">От 50 000 руб./м2</p>
-					<a href="#" class="js-open-modal services__card--about_button" data-modal="3">
-						<button class="about__button">Подробнее</button>
+					<p class="services__card--price">От 5500 руб./м2</p>
+					<a href="#" class="js-open-modal services__card--about_button about__button" data-modal="3">
+						Подробнее
 					</a>
 					</div>
 					</div>
@@ -156,96 +164,182 @@
 
 
 	</div>
+	</div>	
 </section>
 
 <section id="work-list">
 	<div class="container">
-<h2 class="work-title">Ремонтные работы</h2>
-<div class="work-cards">
-	<div class="col-left p40">
-		<img class="col-left__img" src="./img/potolok.jpg" alt="Картинка потолка">
-		<div class="card-box__col1">
-		<h3 class="col-left col-left_h3_title">Потолок</h3>
-		<p class="col-left col-left_p">Подробнее о потолке</p>
-		<a href="prices.html#ceiling" target="_blank" class="services__card--about_button" >
-			<button class="about__button">Посмотреть смету</button>
-		</a>
-	</div>
-	</div>
-		<div class="card__box__col2 p40">
-			<img class="col-left__img" src="./img/walls.jpg" alt="Temporary image">
-			<h3 class="col-left col-left_h3_title">Стены</h3>
-			<p class="col-left col-left_p">Подробнее о стенах</p>
-			<a href="prices.html#walls" target="_blank" class="services__card--about_button" >
-				<button class="about__button">Посмотреть смету</button>
+<h2 class="work-title">Что мы умеем?</h2>
+	<div class="categories">
+		<div class="categories-col">
+			<a href="/prices.html#ceiling" target="_blank" class="categories-item">
+				<div class="categories-item__image" style="background: url(./img/potolok.jpg) center / cover no-repeat; height: 250.947px;"></div>
+				<span class="categories-item__title">Отделка и ремонт потолков</span>
 			</a>
 		</div>
-			<div class="card__box__col3 p40">
-				<img class="col-left__img" src="./img/floor2.jpg" alt="Temporary image">
-				<h3 class="col-left col-left_h3_title">Пол</h3>
-				<p class="col-left col-left_p">Пол подробнее</p>
-				<a href="prices.html#floor" target="_blank" class="services__card--about_button" >
-					<button class="about__button">Посмотреть смету</button>
-				</a>
-	</div>
-	<div class="card__box__col4 p40">
-		<img class="col-left__img" src="./img/plumbing.jpg" alt="Temporary image">
-		<h3 class="col-left col-left_h3_title">Сантехника</h3>
-		<p class="col-left col-left_p">Подробнее о сантехнике</p>
-		<a href="prices.html#plumbing" target="_blank" class="services__card--about_button" >
-			<button class="about__button">Посмотреть смету</button>
+		
+		<div class="categories-col">
+			<a href="prices.html#walls" target="_blank" class="categories-item">
+			<div class="categories-item__image" style="background: url(./img/walls.jpg) center / cover no-repeat; height: 250.947px;"></div>
+			<span class="categories-item__title">Отделка и ремонт стен</span>
 		</a>
-</div>
-<div class="card__box__col5 p40">
-	<img class="col-left__img" src="./img/electrics.jpg" alt="Temporary image">
-	<h3 class="col-left col-left_h3_title">Электрика</h3>
-	<p class="col-left col-left_p">Подробнее об Электрике</p>
-	<a href="prices.html#electrics" target="_blank" class="services__card--about_button" >
-		<button class="about__button">Посмотреть смету</button>
-	</a>
-</div>
-<div class="card__box__col6 p40">
-	<img class="col-left__img" src="./img/demontaj.jpg" alt="Temporary image">
-	<h3 class="col-left col-left_h3_title">Разное</h3>
-	<p class="col-left col-left_p">Подробнее о разном</p>
-	<a href="prices.html#more" target="_blank" class="services__card--about_button" >
-		<button class="about__button">Посмотреть смету</button>
-	</a>
-</div>	
-<div class="card__box__col7 p40 p45">
-	<img class="col-left__img" src="./img/pvh.jpg" alt="Temporary image">
-	<h3 class="col-left col-left_h3_title">ПВХ</h3>
-	<p class="col-left col-left_p">Подробнее о ПВХ</p>
-	<a href="prices.html#pvh" target="_blank" class="services__card--about_button" >
-		<button class="about__button">Посмотреть смету</button>
-	</a>
-</div>
-<div class="card__box__col8 p40 p45">
-	<img class="col-left__img" src="./img/doors.jpg" alt="Temporary image">
-	<h3 class="col-left col-left_h3_title">Двери</h3>
-	<p class="col-left col-left_p">Подробнее о дверях</p>
-	<a href="prices.html#doors" target="_blank" class="services__card--about_button" >
-		<button class="about__button">Посмотреть смету</button>
-	</a>
-</div>
+	</div>
+
+	<div class="categories-col">
+		<a href="prices.html#floor" target="_blank" class="categories-item">
+			<div class="categories-item__image" style="background: url(./img/floor2.jpg) center / cover no-repeat; height: 250.947px;"></div>
+			<span class="categories-item__title">Отделка и ремонт полов</span>
+		</a>
+	</div>
+	
+	<div class="categories-col">
+		<a href="prices.html#plumbing" target="_blank" class="categories-item">
+			<div class="categories-item__image" style="background: url(./img/plumbing.jpg) center / cover no-repeat; height: 250.947px;"></div>
+			<span class="categories-item__title">Сантехнические работы</span>
+		</a>
+	</div>
+	
+	<div class="categories-col">
+		<a href="bathroom.html" target="_blank" class="categories-item">
+			<div class="categories-item__image" style="background: url(./img/bathroom.jpeg) center / cover no-repeat; height: 250.947px;"></div>
+			<span class="categories-item__title">Ванная комната под ключ</span>
+		</a>
+	</div>
+	
+	<div class="categories-col">
+		<a href="prices.html#electrics" target="_blank" class="categories-item">
+			<div class="categories-item__image" style="background: url(./img/electrics.jpg) center / cover no-repeat; height: 250.947px;"></div>
+			<span class="categories-item__title">Электрика</span>
+		</a>
+	</div>
+	
+	<div class="categories-col">
+		<a href="prices.html#more" target="_blank" class="categories-item">
+			<div class="categories-item__image" style="background: url(./img/demontaj.jpg) center / cover no-repeat; height: 250.947px;"></div>
+			<span class="categories-item__title">Разное</span>
+		</a>
+	</div>
+
+	<div class="categories-col">
+		<a href="prices.html#pvh"  target="_blank" class="categories-item">
+			<div class="categories-item__image" style="background: url(./img/pvh.jpg) center / cover no-repeat; height: 250.947px;"></div>
+			<span class="categories-item__title">ПВХ</span>
+		</a>
+	</div>
+
+	<div class="categories-col">
+		<a href="prices.html#doors" target="_blank" class="categories-item">
+			<div class="categories-item__image" style="background: url(./img/doors.jpg) center / cover no-repeat; height: 250.947px;"></div>
+			<span class="categories-item__title">Двери</span>
+		</a>
+	</div>
+			</div>
+		</div>
+</section>
+
+<section id="about-company" class="about ">
+	<div class="block-inner clearfix"> 
+	<div class="container container_75vh">
+	<h2 class="about-title services__title blue">Почему именно мы?</h2>
+	<div class="test">
+		<div class="block-content content"> 
+			<div class="cell why-choose-column wc-with-image">
+			<div class="whychoose-icon">1</div>
+			<h3>Доступно</h3>
+			<p>Наши расценки доступны любому владельцу. 
+				Акции, бонусы, несколько готовых программ, 
+				возможность покупать через нас любые материалы по низкой стоимости делают услуги компании выгодными для широкого круга потребителей.</p>
+		</div>
+		<div class="cell why-choose-column wc-with-image">
+			<div class="whychoose-icon">2</div>
+			<h3>Профессионально</h3>
+			<p>Все работы под ключ выполняют только опытные специалисты с использованием профессионального инструмента. Вам не придется брать инструмент в аренду или давать свой,чтобы мастер мог работать.</p>
+		</div>
+		<div class="cell why-choose-column wc-with-image">
+			<div class="whychoose-icon">3</div>
+			<h3>Всегда на связи</h3>
+			<p>Ежедневные СМС и фото и видео отчеты о проделанной работе. Так что вы всегда будете в курсе всех дел на вашем объекте.</p>
+		</div>
+		<div class="cell why-choose-column wc-with-image">
+			<div class="whychoose-icon">4</div>
+			<h3>Спокойно</h3>
+			<p>Не создаем проблем с соседями. Работаем тихо, без грязи и в установленное время. Даже если грязь есть,то мы всегда сделаем за собой уборку.</p>
+		</div>
 		</div>
 	</div>
-
+</div>
+	</div>
 </section>
 
-<section id="about-company" class="about">
-	<div class="container">
-	<h2 class="about-title services__title">О компании</h2>
-	<p class="about-desc">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quisquam eaque sequi velit incidunt, atque, delectus quis odit officiis aspernatur dicta consectetur omnis, ab hic tempora? Architecto commodi omnis adipisci ad?
-		<br>
-		<br>
-		Шаблон написания текста о компании:
-		<br>
-		Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis ratione reiciendis et sunt eius amet, quasi mollitia saepe explicabo fugiat ipsa eaque consequuntur incidunt pariatur repellat enim suscipit dolores praesentium?</p>
+<section class="block block-block mid dark feature counter-bg even block-count-6 block-region-secondary-content block-15">
+	<div class="block-inner clearfix">  
+	<div class="container container_75vh">
+	<h2 class="block-title">Мы Ценим Ваши Деньги</h2>
+	<div class="test">
+<div class="block-content content"><div class="cell why-choose-column wc-with-image">
+  <div class="whychoose-icon">5</div>
+  <h3>Каждая копейка на счету</h3>
+  <p>Мы делаем свою работу опираясь на ваши пожелания, поэтому не предлагаем то, что вам совсем не нужно или не выгодно.</p>
+</div>
+<div class="cell why-choose-column wc-with-image">
+  <div class="whychoose-icon">6</div>
+  <h3 class="alt">Спланированные расходы и гибкие платежи</h3>
+  <p>Существует полная ясность, когда и за что нужно платить. Мы не берем авансы и не кормим завтраками наших заказчиков.Оплата производится по факту сделанной работы.</p>
+</div>
+<div class="cell why-choose-column wc-with-image">
+  <div class="whychoose-icon">7</div>
+  <h3 class="alt">Честность и прозрачность</h3>
+  <p>Мы честны в том, что мы делаем, прозрачны в закупках на материалы и сопутствующих расходах. Расчет за материалы производится по чекам из магазинов.</p>
+</div>
+<div class="cell why-choose-column wc-with-image">
+  <div class="whychoose-icon">8</div>
+  <h3>Мы сдерживаем обещания</h3>
+  <p>Если мы говорим, что собираемся сделать это в срок и качественно, будьте уверены, что мы выполним данное обещание.</p>
+</div>
+</div>
+</div>
+</div>	
 </div>
 </section>
 
-<!-- <section class="#calculator">
+<section id="block-block-29" class="block block-block mid shade feature odd block-count-7 block-region-secondary-content block-29" >
+	<div class="block-inner clearfix">
+		<div class="container container_75vh">
+	<h2 class="block-title">Мы известны отличной поддержкой</h2>
+	<div class="test">
+<div class="block-content content">  <div class="cell why-choose-column wc-with-image">
+  <div class="whychoose-icon">9</div>
+  <h3>Мы Предлагаем Постоянную Помощь</h3>
+  <p>Закончив у вас ремонт, на этом наша работа не закончилась, впереди ещё гарантийное обслуживание. Мы всегда подскажем и придём на помощь к вам, даже если это не гарантийный случай.</p>
+</div>
+<div class="cell why-choose-column wc-with-image">
+  <div class="whychoose-icon">10</div>
+  <h3 class="alt">Мы в Состоянии Помочь Вам</h3>
+  <p>Есть вопрос о вашем ремонте? Вы не уверены, что ваш ремонт проходит правильно? Нужна помощь с чем-то? Мы доступны весь день по контактным телефонам, готовы проконсультировать вас и помочь.</p>
+</div>
+<div class="cell why-choose-column wc-with-image">
+  <div class="whychoose-icon">11</div>
+  <h3 class="alt">Ваш комфорт для нас приоритет</h3>
+  <p>Мы взяли на себя все хлопоты с ремонтом, чтобы ваше свободное время вы использовали на отдых и досуг.</p>
+</div>
+<div class="cell why-choose-column wc-with-image">
+  <div class="whychoose-icon">12</div>
+  <h3>Результат превыше всего</h3>
+  <p>Наша помощь и наше сотрудничество с вами настроено и заряжено на длительное время.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+<!-- <div class="photos">
+	<h2>Фото</h2>
+<img src="./img/cap_header.jpg" style="width:25%" alt="">
+</div>
+
+<section class="#calculator">
+	<h2>Калькулятор</h2>
 	<table class="tftable">
         <tr><td>1</td><td>Укладка плитки</td><td><input type="text" value="0"></td><td>1000</td><td><input type="checkbox" id="cb"></td></tr>
         <tr><td>2</td><td>Ламинат</td><td><input type="text" value="0"></td><td>250</td><td><input type="checkbox" id="cb"></td></tr>
@@ -253,10 +347,27 @@
         <tr><td>4</td><td>Стяжка</td><td><input type="text" value="0"></td><td>250</td><td><input type="checkbox" id="cb"></td></tr>
 </table>
 <input class="button-calc" type="submit" value="Calc">
-<div><p></p></div>
-
 </section> -->
 
+<footer>
+	<div class="footer-wrapper">
+	<div class="footer-subscribe">
+	<h2 class="footer-text">Подписывайтесь на нас</h2>
+	<a href="https://vk.com/plitka68v" target="_blank" class="footer-vk">
+		<i class="fa fa-vk fa-2x" aria-hidden="true"></i>
+		Вконтакте</a>
+</div>
+<div class="footer-contacts">
+	<h2 class="footer-text">Контакты</h2>
+	<p>Остались вопросы?
+		<br>Позвоните или напишите нам </p>
+	<a class="footer-phone" href="tel:+7(111)111-11-11">+7(111)111-11-11</a>
+	<p><a class="footer-email" href="mailto:pumawc3@gmail.com?subject=КонсультацияПоРемонту">test@email.ru</a></p>
+</div>
+</div>
+
+
+</footer>
 </main>
 </body>
 </html>
