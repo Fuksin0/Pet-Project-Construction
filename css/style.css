@@ -39,7 +39,6 @@ flex: 1 0 auto;
     background-color: #333;
     height: 60px;
     position:fixed;
-    z-index: 1;
     width: 100%;
     top:0;
     left:0;
@@ -102,7 +101,7 @@ position: relative;
     text-align: center;
     align-items: center;
     color:#fff;
-    text-shadow: 1px 1px 1px rgb(0 0 0 / 15%);
+    text-shadow: 5px 1px 1px rgb(0 0 0 / 60%);
     font-weight: 800;
 }
 
@@ -215,7 +214,7 @@ position: relative;
 .services__card--text{
     font-size:26px;
     font-weight: 400;
-    font-family: 'Exo 2', sans-serif !important;
+    font-family: 'Exo 2', sans-serif;
     color:#333;
     margin-bottom: 10px;
 }
@@ -294,7 +293,7 @@ text-transform: none;
     font-size:26px;
     text-align: center;
     font-weight: 400;
-    font-family: 'Exo 2', sans-serif !important;
+    font-family: 'Exo 2', sans-serif;
     color:#333;
     margin-bottom: 10px;
 }
@@ -1043,7 +1042,8 @@ font-size:20px;
         text-align: center;
         font-size: 48px;
         margin-bottom: 48px;
-        color: #333;
+        color: white;
+        text-shadow: 3px 2px 2px #000;
 }
 .gallery {
         position: relative;
@@ -1065,7 +1065,7 @@ font-size:20px;
         min-height: 0;
 }
 .gallery__item:hover {
-        flex: 16; /* при наведении меняем значение flex */
+        flex: 2; /* при наведении меняем значение flex */
 }
 .gallery__item img {
         /* пропорционально растягиваем изображение на весь блок <div class="gallery__item"></div> */
@@ -1077,7 +1077,7 @@ font-size:20px;
         /* для плавного перехода используем transition */
         transition: transform 1.6s ease-in-out;
         /* изначально изображение немного увеличено */
-        transform: scale(1.1);
+        transform: scale(1);
       }
 .gallery__item:hover img {
         transform: scale(1); /* при наведении убираем масштабирование изображения */

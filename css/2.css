@@ -221,7 +221,6 @@
   color: #777;
 }
 #welcom-header {
-  background-image: url(/uploads/bac/front.jpg);
   background-repeat: no-repeat;
   background-position: center center;
   background-size: 100%;
@@ -261,7 +260,6 @@
 .counter-bg::before {
   content: "";
   position: absolute;
-  background-image: url(/uploads/bac/01.png);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -1649,9 +1647,6 @@ blockquote em {
   #page-header h1,
   #welcom-header h1 {
     font-size: 1.5em;
-  }
-  #welcom-header {
-    background-image: url(/uploads/bac/front-mini.jpg);
   }
   .page-feature h3,
   .stages-of-work .title {
