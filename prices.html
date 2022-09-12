@@ -11,14 +11,14 @@
 	<link rel="stylesheet" href="./css/style.css">
     <script defer src="./js/slider.js"></script> <!-- Подключаем JS слайдера -->
 	<script defer src="./js/sticky.js"></script>
+	<link rel="stylesheet" href="./font-awesome-4.7.0/css/font-awesome.min.css"> 
     <title>Смета на работы</title>
 </head>
 
 <body>
-	<button class="up"><a href="#header-top">Наверх</a></button>
 <div>
 	<header id="header-top" class="header" media="screen">
-		<div class="header-top">
+		<div class="header-top top">
 			<nav id="menu">
 				<ul class="header-ul"> <!-- Шапка сайта -->
 					<li class="header-li" ><a href="index.html#main">Главная</a></li>
@@ -3229,5 +3229,49 @@
 	</table>
 </div>
 </section>
+
+<footer>
+	<div class="footer-wrapper">
+	<div class="footer-subscribe">
+	<h2 class="footer-text">Подписывайтесь на нас</h2>
+	<a href="https://vk.com/remont78v" target="_blank" class="footer-vk">
+		<i class="fa fa-vk fa-2x" aria-hidden="true"></i>
+		Вконтакте</a>
+</div>
+<div class="footer-contacts">
+	<h2 class="footer-text border-cut">Контакты</h2>
+	<p style="color: white;
+	font-family:'Exo 2', sans-serif !important;"><span class="footer-question">Остались вопросы?</span>
+		<br>Позвоните или напишите нам </p>
+	<a class="footer-phone" href="tel:+7(921)589-95-25">+7(921)589-95-25</a>
+	<p><a class="footer-email" href="mailto:remont78v@yandex.ru?subject=КонсультацияПоРемонту">remont78v@yandex.ru</a></p>
+</div>
+</div>
+</footer>
 </main>
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script>
+$('body').append('<div class="up"></div>');			
+$(window).scroll(function() {
+if ($(this).scrollTop() > 100) {
+$('.up').css({
+bottom: '15px',
+opacity: "1"
+});
+} else {
+$('.up').css({
+bottom: '-80px'
+});
+}
+});
+$('.up').on('click',function() {
+$('html, body').animate({
+scrollTop: 0
+}, 500);
+return false;
+});
+</script>
+<div class="up" style="bottom: 15px;"></div>	
 </body>
+</html>

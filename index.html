@@ -7,9 +7,11 @@
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Exo+2&family=Roboto&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="./bootstrap-4/css/bootstrap.min.css">
+<link href="/fancybox/jquery.fancybox.min.css" rel="stylesheet"> 
 	<link rel="stylesheet" href="./css/normalize.css"> <!-- Reset -->
 	<link rel="stylesheet" href="./css/style.css"> <!-- Мейн файл css -->
-	<link rel="stylesheet" href="./css/2.css"> 
+	<link rel="stylesheet" href="./css/2.css">
 	<link rel="stylesheet" href="./font-awesome-4.7.0/css/font-awesome.min.css"> 
 	<!-- <link rel="stylesheet" href="./css/main.css"> -->
 	<link rel="stylesheet" href="./css/modal.css"> <!-- Подключаем CSS модального окна -->
@@ -280,6 +282,7 @@
 </div>
 	</div>
 </section>
+<div style="clear:both;"></div>
 
 <section class="block block-block mid dark feature counter-bg even block-count-6 block-region-secondary-content block-15">
 	<div class="block-inner clearfix">  
@@ -312,6 +315,8 @@
 </div>
 </section>
 
+<div style="clear:both;"></div>
+
 <section id="block-block-29" class="block block-block mid shade feature odd block-count-7 block-region-secondary-content block-29" >
 	<div class="block-inner clearfix">
 		<div class="container container_75vh">
@@ -343,64 +348,71 @@
 </div>
 </section>
 
-<!-- <div class="photos">
-	<h2>Фото</h2>
-<img src="./img/cap_header.jpg" style="width:25%" alt="">
+<div style="clear:both;"></div>	
+
+
+<section class="our-work">
+<div class="container">
+    <h1 class="h3 text-center my-4 fz-36">Наши работы</h1>
+    <div class="row">
+        <div class="col-lg-3 col-md-4 col-6 thumb">
+            <a data-fancybox="gallery" href="./img/Gallery-1.jpg">
+                <img class="img-fluid" src="./img/gallery-1-small.jpg" alt="">
+            </a>
+        </div>
+        <div class="col-lg-3 col-md-4 col-6 thumb">
+            <a data-fancybox="gallery" href="./img/Gallery-2.jpg">
+                <img class="img-fluid" src="./img/gallery-2-small.jpg" alt="">
+            </a>
+        </div>
+        <div class="col-lg-3 col-md-4 col-6 thumb">
+            <a data-fancybox="gallery" href="./img/gallery-3.jpg">
+                <img class="img-fluid" src="./img/gallery-3-small.jpg" alt="">
+            </a>
+        </div>
+        <div class="col-lg-3 col-md-4 col-6 thumb">
+            <a data-fancybox="gallery" href="./img/gallery-4.jpg">
+                <img class="img-fluid" src="./img/gallery-4-small.jpg" alt="">
+            </a>
+        </div>
+        <div class="col-lg-3 col-md-4 col-6 thumb">
+            <a data-fancybox="gallery" href="./img/gallery-5.jpg">
+                <img class="img-fluid" src="./img/gallery-5-small.jpg" alt="">
+            </a>
+        </div>
+    </div>
 </div>
+<section>
 
-<section class="#calculator">
-	<h2>Калькулятор</h2>
-	<table class="tftable">
-        <tr><td>1</td><td>Укладка плитки</td><td><input type="text" value="0"></td><td>1000</td><td><input type="checkbox" id="cb"></td></tr>
-        <tr><td>2</td><td>Ламинат</td><td><input type="text" value="0"></td><td>250</td><td><input type="checkbox" id="cb"></td></tr>
-        <tr><td>3</td><td>штукатурка</td><td><input type="text" value="0"></td><td>150</td><td><input type="checkbox" id="cb"></td></tr>
-        <tr><td>4</td><td>Стяжка</td><td><input type="text" value="0"></td><td>250</td><td><input type="checkbox" id="cb"></td></tr>
-</table>
-<input class="button-calc" type="submit" value="Calc">
-</section> -->
+<!-- jQuery -->
+<script src="./jquery/jquery-3.2.1.min.js"></script>
+<!-- Popper -->
+<script src="./popper.js/popper.min.js"></script>
+<!-- Bootstrap JS -->
+<script src="./bootstrap-4/js/bootstrap.min.js"></script>
+<!-- fancyBox -->
+<script src="./fancybox/jquery.fancybox.min.js"></script>
 
-<!--  -->
-
-<div class="section">
-	<!-- <div class="container"> -->
-	  <h2 class="h2">Наши работы</h2>
-	  <!-- Галерея с четырьмя изображениями расположенных горизонтально -->
-	  <div class="section__gallery gallery">
-		<div class="gallery__flex">
-		  <div class="gallery__item"><img src="./img/Gallery-1.jpg" alt=""/></div>
-		  <div class="gallery__item"><img src="./img/Gallery-2.jpg" alt=""/></div>
-		  <div class="gallery__item"><img src="./img/Gallery-3.jpg" alt=""/></div>
-		  <div class="gallery__item"><img src="./img/Gallery-4.jpg" alt=""/></div>
-		  <div class="gallery__item"><img src="./img/Gallery-5.jpg" alt=""/></div>
-		  <div class="gallery__item"><img src="./img/Gallery-1.jpg" alt=""/></div>
-		  <div class="gallery__item"><img src="./img/Gallery-2.jpg" alt=""/></div>
-		  <div class="gallery__item"><img src="./img/Gallery-3.jpg" alt=""/></div>
-		</div>
-	  </div>
-	<!-- </div> -->
-</div>
-<!--  -->
 
 <footer>
 	<div class="footer-wrapper">
 	<div class="footer-subscribe">
 	<h2 class="footer-text">Подписывайтесь на нас</h2>
-	<a href="https://vk.com/plitka68v" target="_blank" class="footer-vk">
+	<a href="https://vk.com/remont78v" target="_blank" class="footer-vk">
 		<i class="fa fa-vk fa-2x" aria-hidden="true"></i>
 		Вконтакте</a>
 </div>
 <div class="footer-contacts">
-	<h2 class="footer-text">Контакты</h2>
+	<h2 class="footer-text border-cut">Контакты</h2>
 	<p style="color: white;
-	font-family:'Exo 2', sans-serif !important;">Остались вопросы?
+	font-family:'Exo 2', sans-serif !important;"><span class="footer-question">Остались вопросы?</span>
 		<br>Позвоните или напишите нам </p>
 	<a class="footer-phone" href="tel:+7(921)589-95-25">+7(921)589-95-25</a>
 	<p><a class="footer-email" href="mailto:remont78v@yandex.ru?subject=КонсультацияПоРемонту">remont78v@yandex.ru</a></p>
 </div>
 </div>
-
-
 </footer>
+
 </main>
 </body>
 </html>

@@ -126,7 +126,7 @@ position: relative;
 /* Начало main контента */
 
 #services{
-    height: 759px;
+    height: 100%;
     background-color: #F9F9F9;
     margin-top: 60px;
 }
@@ -374,172 +374,10 @@ text-transform: none;
 }
 
 /* Конец слайдера */
-
-
-
-
-
-
-/* Попытка адаптивности */
-
-
-/* Smartphones (вертикальная и горизонтальная ориентация) ----------- */
-@media only screen and (min-width : 320px) and (max-width : 480px) {
-    .header{
-        max-width: 100%;
-    }
-    .services__cards{
-        flex-direction: column;
-    }
-
-    .header{
-        max-height: 100%;
-    }
-
-    .header-li,a{
-        font-family: sans-serif;
-        padding: 0;
-    }
-    .services__cards{
-        max-width: 50%;
-        max-height: 50%;
-        flex-direction: column;
-        max-width:fit-content;
-        max-height: fit-content;
-    }
-    .modal{
-        max-width: 50vw;
-        max-height: 100vh;
-    }
-
-    .modal__list{
-        max-width: 50%;
-        max-height: 100%;
-    }
-    .modal li{
-        font-size: 12px;
-    }
-}
-
-
-    
-    /* Smartphones (горизонтальная) ----------- */
-    @media only screen and (min-width: 321px) {
-
-    }
-    
-    /* Smartphones (вертикальная) ----------- */
-    @media only screen and (max-width: 320px) {
-        .header{
-            max-height: 100%;
-        }
-
-        .services__cards{
-            flex-direction: column;
-        }
-    }
-    
-    /* iPads (вертикальная и горизонтальная) ----------- */
-    @media only screen and (min-width: 768px) and (max-width: 1024px) {
-        .header-top{
-            display:inline-block;
-        }
-        .header-ul{
-            padding-left:15px;
-        }
-    /* стили */
-    }
-    
-    /* iPads (горизонтальная) ----------- */
-    @media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
-    /* стили */
-    }
-    
-    /* iPads (вертикальная) ----------- */
-    @media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: portrait) {
-    /* стили */
-    }
-    
-    /* iPad 3**********/
-    @media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 2) {
-    /* стили */
-    }
-    @media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 2) {
-    /* стили */
-    }
-    
-    /* Настольные компьютеры и ноутбуки ----------- */
-    @media only screen  and (min-width: 1224px) {
-    /* стили */
-    }
-    
-    /* Большие экраны ----------- */
-    @media only screen  and (min-width: 1824px) {
-    /* стили */
-    }
-    
-    /* iPhone 4 ----------- */
-    @media only screen and (min-width: 320px) and (max-width: 480px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 2) {
-    /* стили */
-    }
-    @media only screen and (min-width: 320px) and (max-width: 480px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 2) {
-    /* стили */
-    }
-    
-    /* iPhone 5 ----------- */
-    @media only screen and (min-width: 320px) and (max-height: 568px) and (orientation: landscape) and (-webkit-device-pixel-ratio: 2){
-    /* стили */
-    }
-    @media only screen and (min-width: 320px) and (max-height: 568px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 2){
-    /* стили */
-    }
-    
-    /* iPhone 6 ----------- */
-    @media only screen and (min-width: 375px) and (max-height: 667px) and (orientation: landscape) and (-webkit-device-pixel-ratio: 2){
-    /* стили */
-    }
-    @media only screen and (min-width: 375px) and (max-height: 667px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 2){
-    /* стили */
-    }
-    
-    /* iPhone 6+ ----------- */
-    @media only screen and (min-width: 414px) and (max-height: 736px) and (orientation: landscape) and (-webkit-device-pixel-ratio: 2){
-    /* стили */
-    }
-    @media only screen and (min-width: 414px) and (max-height: 736px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 2){
-    /* стили */
-    }
-    
-    /* Samsung Galaxy S3 ----------- */
-    @media only screen and (min-width: 320px) and (max-height: 640px) and (orientation: landscape) and (-webkit-device-pixel-ratio: 2){
-    /* стили */
-    }
-    @media only screen and (min-width: 320px) and (max-height: 640px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 2){
-    /* стили */
-    }
-    
-    /* Samsung Galaxy S4 ----------- */
-    @media only screen and (min-width: 320px) and (max-height: 640px) and (orientation: landscape) and (-webkit-device-pixel-ratio: 3){
-    /* стили */
-    }
-    @media only screen and (min-width: 320px) and (max-height: 640px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 3){
-    /* стили */
-    }
-    
-    /* Samsung Galaxy S5 ----------- */
-    @media only screen and (min-width: 360px) and (max-height: 640px) and (orientation: landscape) and (-webkit-device-pixel-ratio: 3){
-    /* стили */
-    }
-    @media only screen and (min-width: 360px) and (max-height: 640px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 3){
-    /* стили */
-    }
-
-    /* Конец адаптива */
-
     
     /* Prices.html */
 #price{
-    margin-top: 150px;
+    margin-top: 15px;
     display:flex;
 }
 
@@ -604,24 +442,27 @@ tfoot {
     scroll-margin-top:110px;
 }
 
-.up{
+.up {
+    opacity: 0.8;
     z-index: 9999;
-    width: 75px;
-    height: 35px;
-    background-color: black;
+    width: 60px;
+    height: 60px;
+    color: #FFF;
     position: fixed;
-    top: 95%;
-    right:2%;
-    outline: 0;
+    bottom: 15px;
+    right: 20px;
     cursor: pointer;
-    border: none;
-    background: linear-gradient( 0deg, #ec212b, #fa7169);
-    border-radius: 50px 50px 50px 50px / 200% 200%;
-}
-.up a{
-    padding:0;
-}
-
+    border:3px solid #BFE2FF;
+    transition: all .7s ease-in-out;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-color: #337AB7;
+    background-image: url(data:image/svg+xml;utf8;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pgo8IS0tIEdlbmVyYXRvcjogQWRvYmUgSWxsdXN0cmF0b3IgMTYuMC4wLCBTVkcgRXhwb3J0IFBsdWctSW4gLiBTVkcgVmVyc2lvbjogNi4wMCBCdWlsZCAwKSAgLS0+CjwhRE9DVFlQRSBzdmcgUFVCTElDICItLy9XM0MvL0RURCBTVkcgMS4xLy9FTiIgImh0dHA6Ly93d3cudzMub3JnL0dyYXBoaWNzL1NWRy8xLjEvRFREL3N2ZzExLmR0ZCI+CjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgdmVyc2lvbj0iMS4xIiBpZD0iQ2FwYV8xIiB4PSIwcHgiIHk9IjBweCIgd2lkdGg9IjMycHgiIGhlaWdodD0iMzJweCIgdmlld0JveD0iMCAwIDQ0NC44MTkgNDQ0LjgxOSIgc3R5bGU9ImVuYWJsZS1iYWNrZ3JvdW5kOm5ldyAwIDAgNDQ0LjgxOSA0NDQuODE5OyIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSI+CjxnPgoJPHBhdGggZD0iTTQzMy45NjgsMjc4LjY1N0wyNDguMzg3LDkyLjc5Yy03LjQxOS03LjA0NC0xNi4wOC0xMC41NjYtMjUuOTc3LTEwLjU2NmMtMTAuMDg4LDAtMTguNjUyLDMuNTIxLTI1LjY5NywxMC41NjYgICBMMTAuODQ4LDI3OC42NTdDMy42MTUsMjg1Ljg4NywwLDI5NC41NDksMCwzMDQuNjM3YzAsMTAuMjgsMy42MTksMTguODQzLDEwLjg0OCwyNS42OTNsMjEuNDExLDIxLjQxMyAgIGM2Ljg1NCw3LjIzLDE1LjQyLDEwLjg1MiwyNS42OTcsMTAuODUyYzEwLjI3OCwwLDE4Ljg0Mi0zLjYyMSwyNS42OTctMTAuODUyTDIyMi40MSwyMTMuMjcxTDM2MS4xNjgsMzUxLjc0ICAgYzYuODQ4LDcuMjI4LDE1LjQxMywxMC44NTIsMjUuNywxMC44NTJjMTAuMDgyLDAsMTguNzQ3LTMuNjI0LDI1Ljk3NS0xMC44NTJsMjEuNDA5LTIxLjQxMiAgIGM3LjA0My03LjA0MywxMC41NjctMTUuNjA4LDEwLjU2Ny0yNS42OTNDNDQ0LjgxOSwyOTQuNTQ1LDQ0MS4yMDUsMjg1Ljg4NCw0MzMuOTY4LDI3OC42NTd6IiBmaWxsPSIjRkZGRkZGIi8+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPC9zdmc+Cg==)
+    }
+    .up:hover {
+    opacity: 1;
+    background-color: #337AB7;
+    }			
 
 
     /* Конец prices.html */
@@ -944,6 +785,27 @@ padding: 2em;
 }
     /* bathroom end */
 
+
+/* Photos */
+.thumb img {
+    -webkit-filter: grayscale(0);
+    filter: none;
+    border-radius: 5px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    padding: 5px;
+}
+
+.thumb img:hover {
+    -webkit-filter: grayscale(1);
+    filter: grayscale(1);
+}
+
+.thumb {
+    padding: 5px;
+}
+/* Photos end */
+
     /* footer start */
 footer{
 flex: 0 0 auto;
@@ -964,8 +826,13 @@ background: url(/img/footerbg.jpg) left 75% top 55% / cover no-repeat fixed;
         color:white;
         border-bottom:2px solid #8bc34a;
         font-family: 'Exo 2', sans-serif !important;
-        margin-bottom: 40px;
-    
+        margin-bottom: 10px;
+    }
+    .footer-question{
+        font-size:24px;
+    }
+    .border-cut{
+        display:inline-block;
     }
     .footer-vk {
 font-size:20px;
@@ -999,9 +866,12 @@ font-size:20px;
         line-height: 1.5;
         padding:0;
     }
+    .footer-phone{
+        font-size: 17px;
+    }
+
     .footer-email {
-        font-size: 18px;
-        padding-left: 10px;
+        font-size: 17px;
     }
     /* footer end */
 
@@ -1082,3 +952,94 @@ font-size:20px;
 .gallery__item:hover img {
         transform: scale(1); /* при наведении убираем масштабирование изображения */
       }
+
+      .fz-36{
+        font-family: 'Exo 2', sans-serif;
+        font-size: 40px;
+        font-weight: 600;
+      }
+
+      /* Попытка адаптивности */
+
+@media only screen and (min-width:1025px) and (max-width:1080px){
+    .services__cards{
+        flex-direction: column;
+    }
+    .services__card--img{
+        width:100%;
+    }
+    .about__button{
+        left:45%;
+    }
+    .services__card--left,.services__card--middle{
+        margin-bottom: 20px;
+    }
+    .header-main__text{
+        margin-top: -500px;
+    }
+}
+
+/* Smartphones (вертикальная и горизонтальная ориентация) ----------- */
+    @media only screen and (min-width: 768px) and (max-width: 1024px) {
+        .header-ul{
+            padding-left:0;
+        }
+        .header-li, a{
+            padding: 0 7px;
+        }
+        .services__title{
+            padding-top: 40px;
+            font-size: 33px;
+            text-transform: capitalize;
+        }
+        .services__cards{
+            flex-direction: column;
+        }
+        .services__card--img{
+            width:100%;
+        }
+        .about__button{
+            left:42%;
+        }
+        .services__card--left,.services__card--middle{
+            margin-bottom: 20px;
+        }
+        .about{
+            height: 80vh;
+        }
+        .feature h2 {
+            font-size: 33px;
+        }
+        .test{
+            padding-top: 60px;
+        }
+        /* .up{
+            top:94%;
+            right:1%;
+        } */
+        .price-nav{
+            display:flex;
+        }
+        .header-main__text{
+            margin-top: -500px;
+        }
+    }
+    
+
+    @media only screen and (max-width:767px) {
+        .services__cards{
+            flex-direction: column;
+        }
+        .services__card--img{
+            width:100%;
+        }
+        .about__button{
+            left:44%;
+        }
+        .header-main__text{
+            margin-top: -500px;
+        }
+    }
+ 
+
+    /* Конец адаптива */

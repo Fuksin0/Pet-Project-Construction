@@ -644,7 +644,6 @@ header .top-header {
 }
 .feature h2,
 .node-servis .node-content h2 {
-  font-size: 1.7em;
   letter-spacing: -0.375px;
   margin-bottom: 1em;
   margin-top: 0;
@@ -1692,9 +1691,6 @@ blockquote em {
   }
   .quote h2 {
     font-size: 1.5em;
-  }
-  .feature h2 {
-    font-size: 1.3em;
   }
   .shire {
     padding-top: 1em;
