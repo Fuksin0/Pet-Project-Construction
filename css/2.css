@@ -644,6 +644,7 @@ header .top-header {
 }
 .feature h2,
 .node-servis .node-content h2 {
+  padding-top:20px;
   letter-spacing: -0.375px;
   margin-bottom: 1em;
   margin-top: 0;
@@ -1500,10 +1501,6 @@ tbody > tr:nth-of-type(odd) {
   margin-left: 0;
   clear: both;
 }
-.why-choose-column h3 {
-  font-size: 1.25em;
-  margin: 0 0 0.5em;
-}
 .wc-with-image {
   padding-left: 90px;
   position: relative;
@@ -1671,6 +1668,7 @@ blockquote em {
   .why-choose-column:nth-child(1n + 1) {
     margin-left: 0;
     clear: none;
+    padding-bottom: 10px;
   }
   .why-choose-column:nth-child(2n + 1) {
     margin-left: 0;

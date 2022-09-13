@@ -10,11 +10,11 @@
 <link rel="stylesheet" href="./bootstrap-4/css/bootstrap.min.css">
 <link href="/fancybox/jquery.fancybox.min.css" rel="stylesheet"> 
 	<link rel="stylesheet" href="./css/normalize.css"> <!-- Reset -->
+	<link rel="stylesheet" href="./css/modal.css"> <!-- Подключаем CSS модального окна -->
 	<link rel="stylesheet" href="./css/style.css"> <!-- Мейн файл css -->
 	<link rel="stylesheet" href="./css/2.css">
 	<link rel="stylesheet" href="./font-awesome-4.7.0/css/font-awesome.min.css"> 
 	<!-- <link rel="stylesheet" href="./css/main.css"> -->
-	<link rel="stylesheet" href="./css/modal.css"> <!-- Подключаем CSS модального окна -->
 	<script defer src="./js/modal.js"></script> <!-- Подключаем JS модального окна -->
 	<script defer src="./js/slider.js"></script> <!-- Подключаем JS слайдера -->
 	<!-- <script defer src="./js/calc.js"></script> -->
@@ -46,10 +46,29 @@
 				</ul>
 			</nav>
 			<div class="contact-phone">
+				<div class="contact-wrapper">
+				<p class="contact-us-text">Напишите нам</p>
+				<a class="contact-us" href="mailto:remont78v@yandex.ru?subject=КонсультацияПоРемонту">remont78v@yandex.ru</a>
+				</div>
+				<p class="call-us">Позвоните нам</p>
 				<img src="img/green_phone.png" alt="Позвоните нам">
 				<a class="phone-number" href="tel:+7(921)589-95-25">+7(921)589-95-25</a>
 			</div>
 		</div>
+		<div class="hamburger-menu">
+			<input id="menu__toggle" type="checkbox" />
+			<label class="menu__btn" for="menu__toggle">
+			  <span></span>
+			</label>
+		
+			<ul class="menu__box">
+			  <li><a class="menu__item" href="#main">Главная</a></li>
+					<li><a class="menu__item" href="#services">Наши услуги</a></li>
+					<li><a class="menu__item" href="#work-list">Перечень работ</a></li>
+					<li><a class="menu__item" href="#about-company">О нас</a></li>
+					<li><a class="menu__item" href="prices#header-top">Прайс лист</a></li>
+			</ul>
+		  </div>
 		<div class="slider">
 			<!-- Первый слайд -->
 			<div class="item">
@@ -185,63 +204,63 @@
 	<div class="categories">
 		<div class="categories-col">
 			<a href="prices#ceiling" target="_blank" class="categories-item">
-				<div class="categories-item__image" style="background: url(./img/potolok.jpg) center / cover no-repeat; height: 250.947px;"></div>
+				<div class="categories-item__image" style="background: url(./img/potolok.jpg) center / cover no-repeat;"></div>
 				<span class="categories-item__title">Отделка и ремонт потолков</span>
 			</a>
 		</div>
 		
 		<div class="categories-col">
 			<a href="prices#walls" target="_blank" class="categories-item">
-			<div class="categories-item__image" style="background: url(./img/walls.jpg) center / cover no-repeat; height: 250.947px;"></div>
+			<div class="categories-item__image" style="background: url(./img/walls.jpg) center / cover no-repeat;"></div>
 			<span class="categories-item__title">Отделка и ремонт стен</span>
 		</a>
 	</div>
 
 	<div class="categories-col">
 		<a href="prices#floor" target="_blank" class="categories-item">
-			<div class="categories-item__image" style="background: url(./img/floor2.jpg) center / cover no-repeat; height: 250.947px;"></div>
+			<div class="categories-item__image" style="background: url(./img/floor2.jpg) center / cover no-repeat;"></div>
 			<span class="categories-item__title">Отделка и ремонт полов</span>
 		</a>
 	</div>
 	
 	<div class="categories-col">
 		<a href="prices#plumbing" target="_blank" class="categories-item">
-			<div class="categories-item__image" style="background: url(./img/plumbing.jpg) center / cover no-repeat; height: 250.947px;"></div>
+			<div class="categories-item__image" style="background: url(./img/plumbing.jpg) center / cover no-repeat;"></div>
 			<span class="categories-item__title">Сантехнические работы</span>
 		</a>
 	</div>
 	
 	<div class="categories-col">
 		<a href="prices#plumbing" target="_blank" class="categories-item">
-			<div class="categories-item__image" style="background: url(./img/bathroom.jpeg) center / cover no-repeat; height: 250.947px;"></div>
+			<div class="categories-item__image" style="background: url(./img/bathroom.jpeg) center / cover no-repeat;"></div>
 			<span class="categories-item__title">Ванная комната под ключ</span>
 		</a>
 	</div>
 	
 	<div class="categories-col">
 		<a href="prices#electrics" target="_blank" class="categories-item">
-			<div class="categories-item__image" style="background: url(./img/electrics.jpg) center / cover no-repeat; height: 250.947px;"></div>
+			<div class="categories-item__image" style="background: url(./img/electrics.jpg) center / cover no-repeat;"></div>
 			<span class="categories-item__title">Электрика</span>
 		</a>
 	</div>
 	
 	<div class="categories-col">
 		<a href="prices#more" target="_blank" class="categories-item">
-			<div class="categories-item__image" style="background: url(./img/demontaj.jpg) center / cover no-repeat; height: 250.947px;"></div>
+			<div class="categories-item__image" style="background: url(./img/demontaj.jpg) center / cover no-repeat;"></div>
 			<span class="categories-item__title">Разное</span>
 		</a>
 	</div>
 
 	<div class="categories-col">
 		<a href="prices#pvh"  target="_blank" class="categories-item">
-			<div class="categories-item__image" style="background: url(./img/pvh.jpg) center / cover no-repeat; height: 250.947px;"></div>
+			<div class="categories-item__image" style="background: url(./img/pvh.jpg) center / cover no-repeat;"></div>
 			<span class="categories-item__title">ПВХ</span>
 		</a>
 	</div>
 
 	<div class="categories-col">
 		<a href="prices#doors" target="_blank" class="categories-item">
-			<div class="categories-item__image" style="background: url(./img/doors.jpg) center / cover no-repeat; height: 250.947px;"></div>
+			<div class="categories-item__image" style="background: url(./img/doors.jpg) center / cover no-repeat;"></div>
 			<span class="categories-item__title">Двери</span>
 		</a>
 	</div>
@@ -257,25 +276,25 @@
 		<div class="block-content content"> 
 			<div class="cell why-choose-column wc-with-image">
 			<div class="whychoose-icon">1</div>
-			<h3>Доступно</h3>
-			<p>Наши расценки доступны любому владельцу. 
+			<h3 class="whychoose-title1">Доступно</h3>
+			<p class="whychoose-text">Наши расценки доступны любому владельцу. 
 				Акции, бонусы, несколько готовых программ, 
 				возможность покупать через нас любые материалы по низкой стоимости делают услуги компании выгодными для широкого круга потребителей.</p>
 		</div>
 		<div class="cell why-choose-column wc-with-image">
 			<div class="whychoose-icon">2</div>
-			<h3>Профессионально</h3>
-			<p>Все работы под ключ выполняют только опытные специалисты с использованием профессионального инструмента. Вам не придется брать инструмент в аренду или давать свой,чтобы мастер мог работать.</p>
+			<h3 class="whychoose-title1">Профессионально</h3>
+			<p class="whychoose-text">Все работы под ключ выполняют только опытные специалисты с использованием профессионального инструмента. Вам не придется брать инструмент в аренду или давать свой,чтобы мастер мог работать.</p>
 		</div>
 		<div class="cell why-choose-column wc-with-image">
 			<div class="whychoose-icon">3</div>
-			<h3>Всегда на связи</h3>
-			<p>Ежедневные СМС и фото и видео отчеты о проделанной работе. Так что вы всегда будете в курсе всех дел на вашем объекте.</p>
+			<h3 class="whychoose-title1">Всегда на связи</h3>
+			<p class="whychoose-text">Ежедневные СМС и фото и видео отчеты о проделанной работе. Так что вы всегда будете в курсе всех дел на вашем объекте.</p>
 		</div>
 		<div class="cell why-choose-column wc-with-image">
 			<div class="whychoose-icon">4</div>
-			<h3>Спокойно</h3>
-			<p>Не создаем проблем с соседями. Работаем тихо, без грязи и в установленное время. Даже если грязь есть,то мы всегда сделаем за собой уборку.</p>
+			<h3 class="whychoose-title1">Спокойно</h3>
+			<p class="whychoose-text">Не создаем проблем с соседями. Работаем тихо, без грязи и в установленное время. Даже если грязь есть,то мы всегда сделаем за собой уборку.</p>
 		</div>
 		</div>
 	</div>
@@ -291,23 +310,23 @@
 	<div class="test">
 <div class="block-content content"><div class="cell why-choose-column wc-with-image">
   <div class="whychoose-icon">5</div>
-  <h3>Каждая копейка на счету</h3>
-  <p>Мы делаем свою работу опираясь на ваши пожелания, поэтому не предлагаем то, что вам совсем не нужно или не выгодно.</p>
+  <h3 class="whychoose-title1">Каждая копейка на счету</h3>
+  <p class="whychoose-text">Мы делаем свою работу опираясь на ваши пожелания, поэтому не предлагаем то, что вам совсем не нужно или не выгодно.</p>
 </div>
 <div class="cell why-choose-column wc-with-image">
   <div class="whychoose-icon">6</div>
-  <h3 class="alt">Спланированные расходы и гибкие платежи</h3>
-  <p>Существует полная ясность, когда и за что нужно платить. Мы не берем авансы и не кормим завтраками наших заказчиков.Оплата производится по факту сделанной работы.</p>
+  <h3 class="alt whychoose-title1">Спланированные расходы и гибкие платежи</h3>
+  <p class="whychoose-text">Существует полная ясность, когда и за что нужно платить. Мы не берем авансы и не кормим завтраками наших заказчиков.Оплата производится по факту сделанной работы.</p>
 </div>
 <div class="cell why-choose-column wc-with-image">
   <div class="whychoose-icon">7</div>
-  <h3 class="alt">Честность и прозрачность</h3>
-  <p>Мы честны в том, что мы делаем, прозрачны в закупках на материалы и сопутствующих расходах. Расчет за материалы производится по чекам из магазинов.</p>
+  <h3 class="alt whychoose-title1">Честность и прозрачность</h3>
+  <p class="whychoose-text">Мы честны в том, что мы делаем, прозрачны в закупках на материалы и сопутствующих расходах. Расчет за материалы производится по чекам из магазинов.</p>
 </div>
 <div class="cell why-choose-column wc-with-image">
   <div class="whychoose-icon">8</div>
-  <h3>Мы сдерживаем обещания</h3>
-  <p>Если мы говорим, что собираемся сделать это в срок и качественно, будьте уверены, что мы выполним данное обещание.</p>
+  <h3 class="whychoose-title1">Мы сдерживаем обещания</h3>
+  <p class="whychoose-text">Если мы говорим, что собираемся сделать это в срок и качественно, будьте уверены, что мы выполним данное обещание.</p>
 </div>
 </div>
 </div>
@@ -324,23 +343,23 @@
 	<div class="test">
 <div class="block-content content">  <div class="cell why-choose-column wc-with-image">
   <div class="whychoose-icon">9</div>
-  <h3>Мы Предлагаем Постоянную Помощь</h3>
-  <p>Закончив у вас ремонт, на этом наша работа не закончилась, впереди ещё гарантийное обслуживание. Мы всегда подскажем и придём на помощь к вам, даже если это не гарантийный случай.</p>
+  <h3 class="whychoose-title1">Мы Предлагаем Постоянную Помощь</h3>
+  <p class="whychoose-text">Закончив у вас ремонт, на этом наша работа не закончилась, впереди ещё гарантийное обслуживание. Мы всегда подскажем и придём на помощь к вам, даже если это не гарантийный случай.</p>
 </div>
 <div class="cell why-choose-column wc-with-image">
   <div class="whychoose-icon">10</div>
-  <h3 class="alt">Мы в Состоянии Помочь Вам</h3>
-  <p>Есть вопрос о вашем ремонте? Вы не уверены, что ваш ремонт проходит правильно? Нужна помощь с чем-то? Мы доступны весь день по контактным телефонам, готовы проконсультировать вас и помочь.</p>
+  <h3 class="alt whychoose-title1">Мы в Состоянии Помочь Вам</h3>
+  <p class="whychoose-text">Есть вопрос о вашем ремонте? Вы не уверены, что ваш ремонт проходит правильно? Нужна помощь с чем-то? Мы доступны весь день по контактным телефонам, готовы проконсультировать вас и помочь.</p>
 </div>
 <div class="cell why-choose-column wc-with-image">
   <div class="whychoose-icon">11</div>
-  <h3 class="alt">Ваш комфорт для нас приоритет</h3>
-  <p>Мы взяли на себя все хлопоты с ремонтом, чтобы ваше свободное время вы использовали на отдых и досуг.</p>
+  <h3 class="alt whychoose-title1">Ваш комфорт для нас приоритет</h3>
+  <p class="whychoose-text">Мы взяли на себя все хлопоты с ремонтом, чтобы ваше свободное время вы использовали на отдых и досуг.</p>
 </div>
 <div class="cell why-choose-column wc-with-image">
   <div class="whychoose-icon">12</div>
-  <h3>Результат превыше всего</h3>
-  <p>Наша помощь и наше сотрудничество с вами настроено и заряжено на длительное время.</p>
+  <h3 class="whychoose-title1">Результат превыше всего</h3>
+  <p class="whychoose-text">Наша помощь и наше сотрудничество с вами настроено и заряжено на длительное время.</p>
 </div>
 </div>
 </div>
@@ -352,7 +371,7 @@
 
 
 <section class="our-work">
-<div class="container">
+<div class="container max-width-0">
     <h1 class="h3 text-center my-4 fz-36">Наши работы</h1>
     <div class="row">
         <div class="col-lg-3 col-md-4 col-6 thumb">
@@ -396,7 +415,7 @@
 
 <footer>
 	<div class="footer-wrapper">
-	<div class="footer-subscribe">
+	<div class="footer-subscribe border-cut">
 	<h2 class="footer-text">Подписывайтесь на нас</h2>
 	<a href="https://vk.com/remont78v" target="_blank" class="footer-vk">
 		<i class="fa fa-vk fa-2x" aria-hidden="true"></i>
