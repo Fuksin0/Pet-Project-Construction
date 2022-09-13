@@ -841,7 +841,7 @@ padding: 2em;
     /* footer start */
 footer{
 flex: 0 0 auto;
-background: url(/img/footerbg.jpg) left 75% top 55% / cover no-repeat fixed;
+background: url(../img/footerbg.jpg) left 75% top 55% / cover no-repeat fixed;
     }
 
     .footer-wrapper{
