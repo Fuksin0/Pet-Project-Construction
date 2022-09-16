@@ -21,18 +21,32 @@
 		<div class="header-top top">
 			<nav id="menu">
 				<ul class="header-ul"> <!-- Шапка сайта -->
-					<li class="header-li" ><a href="index.html#main">Главная</a></li>
-					<li class="header-li" ><a href="#ceiling">Потолок</a></li>
-					<li class="header-li" ><a href="#walls">Стены</a></li>
-					<li class="header-li" ><a href="#floor">Пол</a></li>
-					<li class="header-li" ><a href="#plumbing">Сантехника</a></li>
-					<li class="header-li" ><a href="#electrics">Электрика</a></li>
-					<li class="header-li" ><a href="#more">Разное</a></li>
-					<li class="header-li" ><a href="#pvh">ПВХ</a></li>
-					<li class="header-li" ><a href="#doors">Двери</a></li>				
+					<li class="header-li header-adaptive" ><a href="index.html#main">Главная</a></li>
+					<li class="header-li header-adaptive" ><a href="#ceiling">Потолок</a></li>
+					<li class="header-li header-adaptive" ><a href="#walls">Стены</a></li>
+					<li class="header-li header-adaptive" ><a href="#floor">Пол</a></li>
+					<li class="header-li header-adaptive" ><a href="#plumbing">Сантехника</a></li>
+					<li class="header-li header-adaptive" ><a href="#electrics">Электрика</a></li>
+					<li class="header-li header-adaptive" ><a href="#more">Разное</a></li>
+					<li class="header-li header-adaptive" ><a href="#pvh">ПВХ</a></li>
+					<li class="header-li header-adaptive" ><a href="#doors">Двери</a></li>				
 				</ul>
 			</nav>
 		</div>
+		<div class="hamburger-menu">
+			<input id="menu__toggle" type="checkbox" />
+			<label class="menu__btn" for="menu__toggle">
+			  <span></span>
+			</label>
+		
+			<ul class="menu__box">
+			  <li><a class="menu__item" href="#main">Главная</a></li>
+					<li><a class="menu__item" href="#services">Наши услуги</a></li>
+					<li><a class="menu__item" href="#work-list">Перечень работ</a></li>
+					<li><a class="menu__item" href="#about-company">О нас</a></li>
+					<li><a class="menu__item" href="prices#header-top">Прайс лист</a></li>
+			</ul>
+		  </div>
 		<div class="slider">
 			<!-- Первый слайд -->
 			<div class="item">
@@ -48,11 +62,11 @@
 	  <a class="previous" onclick="previousSlide()">&#10094;</a>
 	  <a class="next" onclick="nextSlide()">&#10095;</a>
 		<div class="container"> <!-- Контейнер для фиксации контента -->
-			<div class="header-main__text">
-				<h2 class="header-text">
+			<div class="header-main__text header-main__text-adaptive">
+				<h2 class="header-text header-text-adaptive">
 					Наши работы или акции/скидки
 				</h2>
-				<p class="header-description">
+				<p class="header-description header-description-adaptive">
 					Только в этом месяце скидка 10%
 					на все виды работ!
 				</p>
@@ -3244,7 +3258,7 @@
 	font-family:'Exo 2', sans-serif !important;"><span class="footer-question">Остались вопросы?</span>
 		<br>Позвоните или напишите нам </p>
 	<a class="footer-phone" href="tel:+7(921)589-95-25">+7(921)589-95-25</a>
-	<p><a class="footer-email" href="mailto:remont78v@yandex.ru?subject=КонсультацияПоРемонту">remont78v@yandex.ru</a></p>
+	<p><a class="footer-email" href="mailto:remont78v@yandex.ru?subject=КонсультацияПоРемонту">remont78v@mail.ru</a></p>
 </div>
 </div>
 </footer>
